@@ -111,6 +111,6 @@ p {
   padding: 7px 0 3%;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 16px;
   margin-top: 30px;
 }
