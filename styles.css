@@ -19,7 +19,7 @@ body {
   position: fixed;
   justify-content: space-between;
   width: 375px;
-  height: 92px;
+  height: 72px;
   left: 0;
   top: 0;
   z-index: 1;
@@ -30,11 +30,11 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 100%;
+  width: 375%;
 }
 
 .humburger {
-  padding-left: 100px;
+  padding-left: 200px;
   padding-top: 20px;
 }
 
@@ -62,11 +62,11 @@ nav {
   background-size: 44%;
   padding: 120px 24px;
   margin-top: 70px;
-  width:375px;
+  width: 375px;
 }
 
 h1 {
-  width: 100%;
+  width: 327px;
   height: 124px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -173,6 +173,10 @@ p {
   color: #091e42;
 }
 
+.main-section {
+  width: 327px;
+}
+
 .recent-para {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -185,7 +189,7 @@ p {
 }
 
 article {
-  width: 100%;
+  width: 327px;
   height: 147px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -404,6 +408,10 @@ article {
   color: #fff;
   align-items: center;
   text-align: center;
+  width: 375px;
+  height: 1801px;
+  left: 0;
+  top: 4137px;
 }
 
 .about-me {
@@ -419,6 +427,7 @@ article {
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+  width: 375px;
 }
 
 .get-my-resume-btn {
@@ -464,6 +473,7 @@ article {
   line-height: 88px;
   color: #ff6b00;
   padding: 30px 0 0 20px;
+  width: 375px;
 }
 
 .about-txt {
@@ -480,37 +490,6 @@ article {
   line-height: 44px;
   color: #fff;
 }
-
-/* .lang-stack {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    text-align: center;
-    align-items: center;
-    padding-left: 120px;
-
-}
-.frame {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    text-align: center;
-    align-items: center;
-    padding-left: 25px;
-}
-.skill-list {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    text-align: center;
-    align-items: center;
-    padding-left: 25px; */
 
 .stack-items {
   align-items: center;
