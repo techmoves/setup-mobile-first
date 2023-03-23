@@ -34,7 +34,7 @@ nav {
 }
 
 .humburger {
-  padding-left: 210px;
+  padding-left: 225px;
   padding-top: 20px;
 }
 
@@ -135,7 +135,7 @@ p {
 /* my recent works */
 
 .main-1st-Title {
-  display: flex;
+  display: grid;
   align-items: center;
   width: 100%;
   height: 83px;
@@ -175,6 +175,11 @@ p {
 
 .main-section {
   width: 327px;
+}
+
+.list li {
+  margin: 32px;
+  list-style: none;
 }
 
 .recent-para {
@@ -306,6 +311,22 @@ article {
 }
 
 .position-items {
+  display: flex;
+  gap: 12px;
+}
+
+.stack-items li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.position-items ul li {
   display: flex;
   gap: 12px;
 }
@@ -442,23 +463,6 @@ article {
   color: #fff;
 }
 
-.stack-items {
-  align-items: center;
-}
-
-.stack-items li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-
-  /* padding-left: 120px; */
-}
-
 .stack-title {
   display: flex;
   align-items: center;
@@ -467,16 +471,13 @@ article {
   font-weight: 700;
   line-height: 44px;
   justify-content: center;
-}
-
-.list li {
-  margin: 32px;
-  list-style: none;
+  gap: 15px;
 }
 
 .get-my-resume-btn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+  opacity: 0.9;
   transition: 0.4s;
 }
