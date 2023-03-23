@@ -112,6 +112,7 @@ h2 {
   padding-left: 25px;
 }
 
+
 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -380,12 +381,11 @@ article {
 .details {
   background-image: url(images/bg-img.png);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   color: white;
   padding-top: 20%;
   margin: 35px;
-  display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
 }
 
@@ -485,4 +485,5 @@ article {
   border: 1px solid #f55800;
   color: #f55800;
   opacity: 0.9;
+  cursor: pointer;
 }
