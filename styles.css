@@ -251,41 +251,6 @@ article {
   margin-top: 14px;
 }
 
-/* .stack-position {
-  width: 37px;
-  height: 20px;
-  display: flex;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 0 0 24px 24px;
-  list-style: none;
-  margin-top: 14px;
-} */
-
-/* see button */
-
-/* .see-project {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  border: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  background: #ff6b00;
-  padding-left: 25px;
-  margin-bottom: 24px;
-  margin-left: 25px;
-} */
-
 /* mulitply storie stack positioning */
 
 .program-stack1 {
@@ -357,11 +322,6 @@ article {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
-  /* display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em; */
 }
 
 /* backgroud picture and stack */
@@ -455,15 +415,6 @@ article {
   align-items: center;
   text-align: center;
 }
-
-/* .about-me {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-} */
 
 .about-header-txt {
   font-family: 'Crete Round', sans-serif;
