@@ -18,7 +18,7 @@ body {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  width: 375px;
+  width: 100%;
   height: 72px;
   left: 0;
   top: 0;
@@ -34,7 +34,7 @@ nav {
 }
 
 .humburger {
-  padding-left: 200px;
+  padding-left: 210px;
   padding-top: 20px;
 }
 
@@ -408,7 +408,7 @@ article {
   color: #fff;
   align-items: center;
   text-align: center;
-  width: 375px;
+  width: 100%;
   height: 1801px;
   left: 0;
   top: 4137px;
