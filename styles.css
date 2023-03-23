@@ -160,14 +160,13 @@ p {
 }
 
 .recent-para {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  margin-top: 12px;
-  margin: 0 0 24px 24px;
+  margin: 12px 0 24px 24px;
   list-style: none;
 }
 
@@ -185,8 +184,7 @@ article {
 .stack-position {
   width: 25px;
   height: 20px;
-  margin: 0 0 24px 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -196,14 +194,12 @@ article {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 5px;
+  padding: 10px 15px;
   border: #3c3a39 1px solid;
-  margin-top: 14px;
+  margin: 14px 0 24px 24px;
 }
 
 .stack-position1 {
-  width: 32px;
-  height: 20px;
   margin: 0 0 24px 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -237,7 +233,7 @@ article {
   margin-top: 14px;
 }
 
-.stack-position {
+/* .stack-position {
   width: 37px;
   height: 20px;
   display: flex;
@@ -249,10 +245,11 @@ article {
   margin: 0 0 24px 24px;
   list-style: none;
   margin-top: 14px;
-}
+} */
 
 /* see button */
-.see-project {
+
+/* .see-project {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -269,7 +266,7 @@ article {
   padding-left: 25px;
   margin-bottom: 24px;
   margin-left: 25px;
-}
+} */
 
 
 /* mulitply storie stack positioning */
@@ -300,7 +297,7 @@ article {
 }
 
 .program-stack3 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -363,7 +360,6 @@ article {
   line-height: 24px;
   color: #fff;
   height: 87px;
-  width: 295px;
   padding-left: 24px;
   width: 100%;
 }
@@ -405,6 +401,12 @@ article {
   padding-right: 24px;
   padding-bottom: 220px;
   align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
 }
 
 .get-my-resume-btn {
@@ -433,14 +435,14 @@ article {
   text-align: center;
 }
 
-.about-me {
+/* .about-me {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-}
+} */
 
 .about-header-txt {
   font-family: 'Crete Round', sans-serif;
@@ -505,8 +507,7 @@ article {
 }
 
 .stack-items li {
-  text-align: center;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -521,7 +522,6 @@ article {
 .stack-title {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-family: 'InaiMathi', sans-serif;
   font-size: 32px;
   font-weight: 700;
