@@ -117,7 +117,6 @@ p {
 
 /* ----------------mobile version---------------- */
 
-
 /* my recent works */
 
 .main-1st-Title {
@@ -268,7 +267,6 @@ article {
   margin-left: 25px;
 } */
 
-
 /* mulitply storie stack positioning */
 
 .program-stack1 {
@@ -317,7 +315,6 @@ article {
   border: 1px solid #8993a4;
   flex-direction: row;
 }
-
 
 /* ----------------------end------------- */
 .professional-art {
@@ -489,8 +486,6 @@ article {
     text-align: center;
     align-items: center;
     padding-left: 25px;
-
-
 }
 .skill-list {
     font-family: 'Inter';
