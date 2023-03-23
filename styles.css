@@ -117,7 +117,6 @@ p {
 
 /* ----------------mobile version---------------- */
 
-
 /* my recent works */
 
 .main-1st-Title {
@@ -283,8 +282,6 @@ article {
   border: 1px solid #8993a4;
   flex-direction: row;
 }
-
-
 /* ----------------------end------------- */
 .professional-art {
   margin-bottom: 100px;
@@ -307,20 +304,14 @@ article {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
   /* display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em; */
 }
-
 /* backgroud picture and stack */
 
-
-
-
 /* background effect */
-
 .data-arc {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -458,8 +449,6 @@ article {
     text-align: center;
     align-items: center;
     padding-left: 25px;
-
-
 }
 .skill-list {
     font-family: 'Inter';
