@@ -383,8 +383,8 @@ article {
   width: 100%;
   color: white;
   padding-top: 20%;
-  margin: 35px;
-  flex-wrap: nowrap;
+  margin: 15px;
+  flex-wrap: wrap;
 }
 
 /* about me section */
