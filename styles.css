@@ -148,7 +148,6 @@ p {
   font-size: 40px;
   line-height: 52px;
   margin: 40px 24px;
-  padding-left: 25px;
   color: black;
 }
 
@@ -158,8 +157,8 @@ p {
 
 .recent-pic {
   align-items: center;
-  padding-left: 30px;
   width: 100%;
+  margin: 24px 24px;
 }
 
 .top-stories {
