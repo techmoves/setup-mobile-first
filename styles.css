@@ -18,12 +18,12 @@ body {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  width: 100%;
   height: 72px;
   left: 0;
   top: 0;
   z-index: 1;
   background-color: #3c3a39;
+  width: 100%;
 }
 
 nav {
@@ -62,6 +62,11 @@ nav {
   background-size: 44%;
   padding: 120px 24px;
   margin-top: 70px;
+  width: 327px;
+}
+
+.recent-works {
+  width: 100;
 }
 
 h1 {
@@ -153,6 +158,7 @@ p {
 
 .underlined {
   margin: 30px;
+  border: 1px solid #fff;
 }
 
 .recent-pic {
@@ -177,10 +183,13 @@ p {
 
 .main-section {
   width: 100%;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .list li {
-  margin: 32px;
+  margin: 15px;
   list-style: none;
 }
 
@@ -220,9 +229,9 @@ article {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 2px;
   border: #3c3a39 1px solid;
-  margin: 14px 0 24px 24px;
+  margin: 14px 0 22px 24px;
 }
 
 .stack-position1 {
@@ -242,13 +251,14 @@ article {
   border: #3c3a39 1px solid;
   margin-top: 14px;
   flex-wrap: nowrap;
+  padding-left: 12px;
 }
 
 /* boostrap */
 .stack-positionz {
   width: 71px;
   height: 20px;
-  margin: 0 0 24px 24px;
+  margin: 0 0 24px 4px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -257,6 +267,7 @@ article {
   list-style: none;
   border: #8993a4;
   border: #3c3a39 1px solid;
+  padding: 10px 12px;
   margin-top: 14px;
 }
 
@@ -315,8 +326,10 @@ article {
 }
 
 .position-items {
-  display: flex;
-  gap: 12px;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .stack-items li {
@@ -331,13 +344,16 @@ article {
 }
 
 .position-items ul li {
-  display: flex;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
 }
 
 .programs {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
 
@@ -395,8 +411,9 @@ article {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 1801px;
   top: 4137px;
+  display: grid;
+  flex-direction: column;
 }
 
 .about-me {
@@ -478,6 +495,7 @@ article {
   gap: 15px;
 }
 
+.see-project-btn:hover,
 .get-my-resume-btn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
