@@ -30,7 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 375%;
+  width: 100%;
 }
 
 .humburger {
@@ -62,7 +62,6 @@ nav {
   background-size: 44%;
   padding: 120px 24px;
   margin-top: 70px;
-  width: 375px;
 }
 
 h1 {
@@ -172,13 +171,13 @@ p {
   align-items: center;
   margin: 0 0 24px 24px;
   margin-bottom: 12px;
-  width: 327px;
+  width: 100%;
   height: 36px;
   color: #091e42;
 }
 
 .main-section {
-  width: 327px;
+  width: 100%;
 }
 
 .list li {
@@ -195,10 +194,10 @@ p {
   text-align: left;
   margin: 12px 0 24px 24px;
   list-style: none;
+  width: 100%;
 }
 
 article {
-  width: 327px;
   height: 147px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -206,10 +205,11 @@ article {
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
+  width: 100%;
 }
 
 .stack-position {
-  width: 25px;
+  width: 100%;
   height: 20px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -395,7 +395,7 @@ article {
   color: #fff;
   align-items: center;
   text-align: center;
-  width: 425px;
+  width: 100%;
   height: 1801px;
   top: 4137px;
 }
@@ -413,7 +413,7 @@ article {
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  width: 375px;
+  width: 100%;
 }
 
 .get-my-resume-btn {
