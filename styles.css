@@ -16,7 +16,7 @@ body {
 
 .top-header {
   display: flex;
-  position: fixed;
+  position: absolute;
   justify-content: space-between;
   width: 100%;
   height: 72px;
