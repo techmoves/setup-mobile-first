@@ -507,3 +507,152 @@ article {
   opacity: 0.9;
   cursor: pointer;
 }
+
+
+/* 
+/* ----------------------form area-------- */
+#form-area1 {
+align-items: center;
+
+}
+
+.form-txt {
+  width: 327px;
+  height: 216px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin: 25px;
+  color: #172B4D;
+}
+#message {
+  position: relative;
+  left: 12px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+}
+
+input {
+  margin: 20px;
+  width: 280px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
+}
+
+.placeholder {
+  height: 50px;
+}
+
+textarea  {
+  background: #FBF8F7;
+  position: absolute;
+  align-items: center;
+  padding-left: 30px;
+  resize: both;
+  height: 100px;
+
+
+}
+.user-details {
+  margin: 14px;
+}
+
+.user-details ul li {
+  display: grid;
+  list-style: none;
+  margin: 50px;
+}
+form {
+  margin: 20px;
+}
+.button {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  
+}
+.my-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #FF6B00;
+  border: none;
+  margin-left: 70px;
+ 
+}
+
+.line {
+  width: 327px;
+  height: 1px;
+  background-color: #DBD8D7;
+  height: 1px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  outline:#DBD8D7;
+  
+}
+
+footer {
+  margin-top: 80px;
+}
+
+.social-media1 {
+  list-style: none;
+  padding: 7px 0 3%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
+  margin-left: 110px;
+}
+
+.form-list ul {
+  display: grid;
+  list-style: none;
+}
+
+.footer-line {
+  position: relative;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: 8px;
+  background: #0D151E;
+  border-radius: 10px;
+  align-items: center;
+  margin: 11px;
+}
+.footer-top {
+  position: absolute;
+  height: 1px;
+  width: 375px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  background: #DFE1E6;
+
+}
