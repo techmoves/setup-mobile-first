@@ -508,11 +508,14 @@ article {
   cursor: pointer;
 }
 
-
 /*
 /* ----------------------form area-------- */
 #form-area1 {
   align-items: center;
+}
+
+#text-box {
+  width: 80%;
 }
 
 .form-txt {
