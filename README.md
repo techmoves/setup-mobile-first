@@ -150,7 +150,7 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page]()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/techmoves/setup-mobile-first/issues/3">back to top</a>)</p>
 
 <!-- SUPPORT --> 
 
