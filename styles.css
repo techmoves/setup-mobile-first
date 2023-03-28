@@ -512,6 +512,8 @@ article {
 /* ----------------------form area-------- */
 #form-area1 {
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #text-box {
@@ -546,11 +548,21 @@ article {
 }
 
 input {
-  margin: 20px;
   width: 280px;
   border-top: none;
   border-left: none;
   border-right: none;
+  border-color: #dbd8d7;
+  padding: 0.6em;
+  margin: 15px 20px;
+  color: #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .placeholder {
@@ -561,9 +573,28 @@ textarea {
   background: #fbf8f7;
   position: absolute;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 12px;
+  font-style: italic;
   resize: both;
-  height: 100px;
+  border: none;
+  outline: none;
+  height: 90px;
+  width: 303px;
+  left: 12px;
+  top: 12px;
+}
+
+input[type="textarea"]::placeholder {
+  color: #979493;
+  font-style: italic;
+}
+
+input[type="text"]::placeholder {
+  color: #979493;
+}
+
+input[type="email"]::placeholder {
+  color: #979493;
 }
 
 .user-details {
@@ -587,6 +618,7 @@ form {
   display: flex;
   flex-direction: row;
   margin-top: 24px;
+  padding: 0 0 0 92px;
 }
 
 .my-btn {
@@ -605,16 +637,6 @@ form {
   background: #ff6b00;
   border: none;
   margin-left: 70px;
-}
-
-.my-btn:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-}
-
-.my-btn:active {
-  background-color: #f55800;
-  color: #fff5e1;
 }
 
 .line {
