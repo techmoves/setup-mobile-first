@@ -519,7 +519,9 @@ article {
 #text-box {
   width: 80%;
 }
-
+label {
+  font-style: italic;
+}
 .form-txt {
   width: 327px;
   height: 216px;
@@ -540,11 +542,11 @@ article {
   top: 12px;
   bottom: 12px;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
+  font-style: italic;
 }
 
 input {
@@ -555,7 +557,7 @@ input {
   border-color: #dbd8d7;
   padding: 0.6em;
   margin: 15px 20px;
-  color: #dbd8d7;
+  color: 3c3a39;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -584,16 +586,12 @@ textarea {
   top: 12px;
 }
 
-input[type="textarea"]::placeholder {
+textarea::placeholder {
   color: #979493;
   font-style: italic;
 }
 
-input[type="text"]::placeholder {
-  color: #979493;
-}
-
-input[type="email"]::placeholder {
+input::placeholder {
   color: #979493;
 }
 
