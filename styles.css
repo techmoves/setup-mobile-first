@@ -519,9 +519,7 @@ article {
 #text-box {
   width: 80%;
 }
-label {
-  font-style: italic;
-}
+
 .form-txt {
   width: 327px;
   height: 216px;
@@ -557,9 +555,8 @@ input {
   border-color: #dbd8d7;
   padding: 0.6em;
   margin: 15px 20px;
-  color: 3c3a39;
+  color: #3c3a39;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
