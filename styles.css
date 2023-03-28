@@ -603,12 +603,14 @@ form {
   border: none;
   margin-left: 70px;
 }
+
 .my-btn:hover {
   background-color: #fff5e1;
   color: #f55800;
 }
+
 .my-btn:active {
-  background-color:#f55800;
+  background-color: #f55800;
   color: #fff5e1;
 }
 
