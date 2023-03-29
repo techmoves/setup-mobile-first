@@ -38,6 +38,10 @@ nav {
   list-style: none;
 }
 
+nav ul li {
+  display: none;
+}
+
 .humburger {
   padding-left: 205px;
   padding-top: 20px;
@@ -683,4 +687,14 @@ footer {
   top: 0;
   border-radius: 0;
   background: #dfe1e6;
+}
+/* ------------------------destop version-------------------------- */
+@media only screen and (min-width: 768px) {
+/* -----------------------------top hearder section     ------------------------ */
+
+
+
+
+
+
 }
