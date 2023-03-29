@@ -31,14 +31,15 @@
         </nav>
     </header>
     <section id="main">
-        <h1>Hey There.
-            I’m Phelelani.</h1>
-        <h2 id="h2">I'm a Software Developer</h2>
-        <p> I can help you build a product , feature or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded,
-            don’t hesitate to contact me.</p>
-
-
+        <div class="just-items">
+            <h1>Hey There. <br>
+                I’m Phelelani.</h1>
+            <h2 id="h2">I'm a Software Developer</h2>
+            <p> I can help you build a product , feature or website Look <br> through some of my work and experience! If you like
+                what <br> you see and have a project you need coded, <br>
+                don’t hesitate to contact me.</p>
+        </div>
+      
 
         <ul class="social-media">
 
@@ -66,23 +67,26 @@
                     <hr>
                 </div>
                 <img class="recent-pic" src="images/cards-img.png" alt="recent photo">
-
-                <h3 class="top-stories">Multi-Post Stories </h3>
-                <span class="recent-para">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy
-                    text.
-                </span>
-                <div class="programs">
-                    <div class="position-buttons">
-                        <button class="recentBtn" type="button" id="color">css </button>
-                        <button class="recentBtn" type="button" id="color">html </button>
-                        <button class="recentBtn" type="button" id="color">bootstrap </button>
-                        <button class="recentBtn" type="button" id="color">Ruby</button>
+                <div class="work-story">
+                    <h3 class="top-stories">Multi-Post Stories </h3>
+                    <span class="recent-para">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy
+                        text.
+                    </span>
+                    <div class="programs">
+                        <div class="position-buttons">
+                            <button class="recentBtn" type="button" id="color">css </button>
+                            <button class="recentBtn" type="button" id="color">html </button>
+                            <button class="recentBtn" type="button" id="color">bootstrap </button>
+                            <button class="recentBtn" type="button" id="color">Ruby</button>
+                        </div>
                     </div>
+                    <button type="button" class="get-my-resume-btn">See Project </button>
                 </div>
-                <button type="button" class="get-my-resume-btn">See Project </button>
-            </div>
+
+                </div>
+               
             <!-- art data sec -->
             <div class="professional-art">
                 <div class="details">
@@ -203,47 +207,51 @@
             <hr class="underlined">
 
         </div>
+<div class="tech-skills">
+    <div class="stack-items">
 
-        <div class="stack-items">
 
-
-            <div class="stack-title">
-                <img src="images/lan.png" alt="language-icon">
-                <h3>Language</h3>
-            </div>
-            <ul class="list">
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>Html</li>
-                <li>Css</li>
-            </ul>
+        <div class="stack-title">
+            <img src="images/lan.png" alt="language-icon">
+            <h3>Language</h3>
         </div>
-        <div class="stack-items">
-            <div class="stack-title">
-                <img src="images/framew.png" alt="framework-icon">
-                <h3>Framework</h3>
-            </div>
-            <ul class="list">
-                <li>React.js</li>
-                <li>Ruby on Rails</li>
-                <li>RSPec</li>
-                <li>CapyBara</li>
-            </ul>
+        <ul class="list">
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+        </ul>
+    </div>
+    <div class="stack-items">
+        <div class="stack-title">
+            <img src="images/framew.png" alt="framework-icon">
+            <h3>Framework</h3>
         </div>
+        <ul class="list">
+            <li>React.js</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+        </ul>
+    </div>
 
-        <div class="stack-items">
-            <div class="stack-title">
-                <img src="images/skill.png" alt="skill-icon">
-                <h3>Skills</h3>
-            </div>
-            <ul class="list">
-                <li>Database Management</li>
-                <li>Version Control</li>
-                <li>CLI</li>
-                <li>API Design</li>
-                <li>Web Development</li>
-            </ul>
+    <div class="stack-items">
+        <div class="stack-title">
+            <img src="images/skill.png" alt="skill-icon">
+            <h3>Skills</h3>
         </div>
+        <ul class="list">
+            <li>Database Management</li>
+            <li>Version Control</li>
+            <li>CLI</li>
+            <li>API Design</li>
+            <li>Web Development</li>
+        </ul>
+    </div>
+
+
+</div>
+        
 
     </section>
 
@@ -260,10 +268,12 @@
                 <form action="https://formspree.io/f/{form_id}" method="post">
                 <div class="user-details">
                     
-                 
-                            <input type="text" placeholder="First name" maxlength="30" required>
+                 <div class="form-list">
+                    <input type="text" placeholder="First Name" maxlength="30" required>
+                    <input type="text" placeholder="Last Name" maxlength="30" id="last-name" required>
+                 </div>
                        
-                            <input type="email" placeholder="Email address" size="30" required >
+                            <input type="email" placeholder="Email address" size="30" id="email-id" required >
     
                             <textarea name="Message" id="message" placeholder="Write me something..." id="text-box" type="text"  maxlength="500" required></textarea>
                 
