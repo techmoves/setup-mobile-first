@@ -770,7 +770,7 @@ footer {
     align-items: center;
     text-align: center;
     color: #ffffff;
-    padding-left: 170px;
+    padding-left: 227px;
   }
 
   #main {
@@ -780,12 +780,10 @@ footer {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 34%;
-    /* padding: 120px 24px;
-    margin-top: 70px; */
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    background-color: aqua;
+    justify-content: center;
   }
   
   #main > div {
@@ -860,11 +858,6 @@ footer {
   .just-items {
     padding: 0px 120px 0;
   }
-  /* .current-project {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-  } */
 
 .pic-ajust {
   display: flex;
@@ -873,7 +866,6 @@ footer {
   gap: 24px;
 }
 
-
   .work-story {
     padding-top: 0;
   }
@@ -881,7 +873,6 @@ footer {
   .line-flex {
     display: flex;
     flex-direction: row;
-
   }
 
   /* --------------------about me section -------------- */
@@ -970,7 +961,7 @@ footer {
     height: 40px;
     left: 433px;
     top: 62px;
-    margin-left: 181px;
+    margin-left: 362px;
 
   }
   .form-list {
@@ -1120,7 +1111,6 @@ footer {
     background: #ff6b00;
     color: #fff;
     border: #fff;
-
   }
   .see-project-btn {
     display: none;
@@ -1142,22 +1132,17 @@ footer {
     margin: 0;
     border: 1px solid #fff;
   }
-  .programs1 {
-
-  }
 
   #about-me-sec {
     background: url("images/bigabout.png") #1C1A19 no-repeat;
     background-position: 100% 5%;
     background-size: 35%;
-
-    
   }
 
   .list li, .stack-title{
     text-align: start;
+    justify-content: flex-start;
   }
-
 
 }
 
