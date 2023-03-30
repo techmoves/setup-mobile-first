@@ -1002,6 +1002,35 @@ footer {
   }
 
   /* ----------------------grid work section -------destop----------------- */
+
+  .main-1st-Title {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: black;
+
+  }
+
+  h2 {
+    width: 100%;
+    height: 81px;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+
   .professional-art {
     display: none;
   }
@@ -1075,7 +1104,26 @@ footer {
   .prof-1 {
     display: none;
   }
-}
-.programs1 {
+  .line-flex {
+    display: flex;
+    align-items: center;
+    margin: 114px 0;
+    text-align: start;
+    
+  }
+  .underlined {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #fff;
+    height: 1px;
+  }
+  .programs1 {
+
+  }
+
+
 
 }
+
+
+
