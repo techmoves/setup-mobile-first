@@ -1050,7 +1050,7 @@ footer {
   .professional-art {
     display: none;
   }
-  
+
   .professional-art1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1141,7 +1141,7 @@ footer {
 
   .list li,
   .stack-title {
-    text-align: start;
+    /* text-align: start; */
     justify-content: flex-start;
   }
 }
