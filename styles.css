@@ -1117,7 +1117,7 @@ footer {
   .see-project-btn {
     display: none;
   }
-
+---------------------------
   .programs1,
   .data-arc5,
   .prof-1 {
@@ -1149,6 +1149,7 @@ footer {
   .stack-title {
     text-align: start;
   }
+  /* --------------------------------this hover and animation forr more styling---------------------------- */
   /* .logo:hover {
     transform: scale(1.15);
     transform-origin: 1%;
