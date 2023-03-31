@@ -1149,7 +1149,11 @@ footer {
   .stack-title {
     text-align: start;
   }
+
+
   /* --------------------------------this hover and animation forr more styling---------------------------- */
+
+
   /* .logo:hover {
     transform: scale(1.15);
     transform-origin: 1%;
@@ -1158,8 +1162,12 @@ footer {
   .social-icons:hover {
     transform: scale(1.2);
     transform-origin: 1%;
-    transition-duration: 0.1s; */
+    transition-duration: 0.1s;
+  } */
+
   }
+
+
 
 
 
