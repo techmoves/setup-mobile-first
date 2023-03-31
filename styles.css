@@ -1149,4 +1149,17 @@ footer {
   .stack-title {
     text-align: start;
   }
+  /* .logo:hover {
+    transform: scale(1.15);
+    transform-origin: 1%;
+    transition-duration: 0.1s;
+  }
+  .social-icons:hover {
+    transform: scale(1.2);
+    transform-origin: 1%;
+    transition-duration: 0.1s; */
+  }
+
+
+
 }
