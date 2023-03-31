@@ -1117,8 +1117,8 @@ footer {
   .see-project-btn {
     display: none;
   }
----------------------------
-  .programs1,
+
+  /* --------------------------- .programs1, */
   .data-arc5,
   .prof-1 {
     display: none;
@@ -1152,22 +1152,15 @@ footer {
 
   /* --------------------------------this hover and animation forr more styling---------------------------- */
 
-
-  /* .logo:hover {
+  .logo-art:hover {
     transform: scale(1.15);
     transform-origin: 1%;
     transition-duration: 0.1s;
   }
-  .social-icons:hover {
+
+  .social-media:hover {
     transform: scale(1.2);
     transform-origin: 1%;
     transition-duration: 0.1s;
-  } */
-
   }
-
-
-
-
-
 }
