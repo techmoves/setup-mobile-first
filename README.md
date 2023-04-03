@@ -74,8 +74,8 @@
 
 deployment
 - https://techmoves.github.io/setup-mobile-first/
-=======
-- [Live Demo Link] https://techmoves.github.io/setup-mobile-first/
+
+-  https://techmoves.github.io/setup-mobile-first/
 
 
 
