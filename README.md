@@ -72,8 +72,12 @@
 
 > LIVE DEMO LINK.
 
-- [Live Demo Link] https://techmoves.github.io/setup-mobile-first/
-- 
+deployment
+- https://techmoves.github.io/setup-mobile-first/
+
+-  https://techmoves.github.io/setup-mobile-first/
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +122,7 @@ To run tests, run the following command:
 
 - Project is deployed using [GitHub Pages](https://techmoves.github.io/setup-mobile-first/)
 
-  Here is the link: https://techmoves.github.io/setup-mobile-first/
+
 
 
 <!-- AUTHORS -->
@@ -140,11 +144,11 @@ To run tests, run the following command:
 
 > Features to be added:
 
-- [ ] **[Setup and mobile version skeleton]**
-- [ ] **[Mobile version]**
-- [ ] **[Contact form (pair programming)]**
-- [ ] **[Desktop version]**
-- [ ] **[Application deploy]**
+- [X] **[Setup and mobile version skeleton]**
+- [X] **[Mobile version]**
+- [X] **[Contact form (pair programming)]**
+- [X] **[Desktop version]**
+- [X] **[Application deploy]**
 - [ ] **[Evaluate accessibility (pair programming)]**
 - [ ] **[Mobile menu (pair programming)]**
 - [ ] **[Details modal (pair programming)]**
