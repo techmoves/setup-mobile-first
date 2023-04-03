@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -67,6 +68,13 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> LIVE DEMO LINK.
+
+- https://techmoves.github.io/setup-mobile-first/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -107,7 +115,9 @@ To run tests, run the following command:
 
 ### Deployment
 
-- Project is deployed using [GitHub Pages](https://pages.github.com/)
+- Project is deployed using [GitHub Pages](https://techmoves.github.io/setup-mobile-first/)
+
+  Here is the link: https://techmoves.github.io/setup-mobile-first/
 
 
 <!-- AUTHORS -->
@@ -129,11 +139,11 @@ To run tests, run the following command:
 
 > Features to be added:
 
-- [ ] **[Setup and mobile version skeleton]**
-- [ ] **[Mobile version]**
-- [ ] **[Contact form (pair programming)]**
-- [ ] **[Desktop version]**
-- [ ] **[Application deploy]**
+- [X] **[Setup and mobile version skeleton]**
+- [X] **[Mobile version]**
+- [X] **[Contact form (pair programming)]**
+- [X] **[Desktop version]**
+- [X] **[Application deploy]**
 - [ ] **[Evaluate accessibility (pair programming)]**
 - [ ] **[Mobile menu (pair programming)]**
 - [ ] **[Details modal (pair programming)]**
@@ -150,7 +160,7 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/techmoves/setup-mobile-first/issues/3)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/techmoves/setup-mobile-first/issues/3">back to top</a>)</p>
 
 <!-- SUPPORT --> 
 
