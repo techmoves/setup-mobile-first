@@ -122,7 +122,7 @@ To run tests, run the following command:
 
 - Project is deployed using [GitHub Pages](https://techmoves.github.io/setup-mobile-first/)
 
-  Here is the link: https://techmoves.github.io/setup-mobile-first/
+
 
 
 <!-- AUTHORS -->
