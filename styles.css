@@ -532,6 +532,20 @@ article {
   cursor: pointer;
 }
 
+.see-project-btn:active,
+.see-project-btn1:active,
+.get-my-resume-btn:active {
+  background-color: #e05304;
+  color: #fff;
+}
+
+.see-project-btn:disabled,
+.see-project-btn1:disabled,
+.get-my-resume-btn:disabled {
+  background-color: #F4F1F0;
+  color: #5b5957;
+}
+
 /*
 /* ----------------------form area-------- */
 
