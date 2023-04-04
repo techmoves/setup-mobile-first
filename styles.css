@@ -1098,6 +1098,9 @@ footer {
     color: white;
     flex-wrap: wrap;
   }
+  .programs1 {
+    display: none;
+  }
 
   .see-project-btn1 {
     font-family: "Inter", sans-serif;
@@ -1108,7 +1111,7 @@ footer {
     width: 100%;
     height: 48px;
     left: 0;
-    top: 319px;
+    top: 321px;
     background: #ff6b00;
     color: #fff;
     border: #fff;
