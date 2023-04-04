@@ -543,7 +543,7 @@ article {
 .see-project-btn:disabled,
 .see-project-btn1:disabled,
 .get-my-resume-btn:disabled {
-  background-color: #F4F1F0;
+  background-color: #f4f1f0;
   color: #5b5957;
 }
 
@@ -842,18 +842,6 @@ label {
     align-content: space-between;
   }
 
-  .data-arc {
-    width: 80%;
-    height: 72px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #f4f5f7;
-    margin-left: 20px;
-  }
-
   .social-media {
     list-style: none;
     display: flex;
@@ -1117,18 +1105,17 @@ label {
     color: white;
     flex-wrap: wrap;
   }
-.data-arc {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-  color: #fff;
-  margin: 36px 10px;
-}
-  
 
+  .data-arc {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
+    margin: 36px 10px;
+  }
 
   .programs1 {
     display: none;
