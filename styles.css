@@ -704,6 +704,10 @@ footer {
   background: #dfe1e6;
 }
 
+label {
+  display: none;
+}
+
 /* ------------------------destop version-------------------------- */
 @media only screen and (min-width: 768px) {
   /* -----------------------------top hearder section     ------------------------ */
