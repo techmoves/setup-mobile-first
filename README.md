@@ -163,6 +163,8 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
+I'm happy to share my walk through to the project here is the link https://www.loom.com/share/59979d30d1b04be48898e4de063c5fa1
+
 Feel free to check the [issues page](https://github.com/techmoves/setup-mobile-first/issues/3)
 
 <p align="right">(<a href="https://github.com/techmoves/setup-mobile-first/issues/3">back to top</a>)</p>
