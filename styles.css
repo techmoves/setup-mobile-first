@@ -156,10 +156,13 @@ p {
 
 .social-media {
   list-style: none;
-  padding: 7px 0 3%;
+  padding: 7px 131px 2px 3%;
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.close {
+  
 }
 
 /* ----------------mobile version---------------- */
@@ -728,6 +731,10 @@ label {
   /* -----------------------------top hearder section     ------------------------ */
 
   .humburger {
+    display: none;
+  }
+
+  .close {
     display: none;
   }
 
