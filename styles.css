@@ -91,7 +91,7 @@ br {
 }
 
 .recent-works {
-  width: 100;
+  width: 100%;
 }
 
 h1 {
@@ -160,9 +160,6 @@ p {
   display: flex;
   flex-direction: row;
   gap: 20px;
-}
-.close {
-  
 }
 
 /* ----------------mobile version---------------- */
@@ -745,8 +742,7 @@ label {
   color: #cdcac9;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
-  padding-right: 100px;
-
+  padding-right: 160px;
 }
 
 #menu-list {
@@ -858,7 +854,6 @@ label {
   }
 
   #main > div {
-    width: none;
     max-width: 1440px;
     margin-left: -5%;
   }
