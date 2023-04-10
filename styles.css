@@ -746,6 +746,7 @@ label {
 }
 
 #menu-list {
+  width: 100%;
   list-style-type: none;
   margin-top: 20px;
 }
