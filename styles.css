@@ -740,12 +740,35 @@ label {
 #modal-delete {
   display: flex;
   justify-content: flex-end;
-  padding-top: 20px;
+  padding-top: 100px;
   font-size: 20px;
   color: #cdcac9;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
+
 }
+
+#menu-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.menu-content {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+/* end of modal styling */
 
 /* ------------------------destop version-------------------------- */
 @media only screen and (min-width: 768px) {

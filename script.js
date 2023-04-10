@@ -15,7 +15,7 @@ const menuDisplay = () => {
 
   const item1 = document.createElement('li');
   const portfolio = document.createElement('a');
-  portfolio.href = '#works-section';
+  portfolio.href = '#work-section';
   portfolio.className = 'menu-content';
   portfolio.textContent = 'Portfolio';
   item1.appendChild(portfolio);
@@ -25,7 +25,7 @@ const menuDisplay = () => {
 
   const item2 = document.createElement('li');
   const about = document.createElement('a');
-  about.href = '#about-section';
+  about.href = '#about-me-sec';
   about.className = 'menu-content';
   about.textContent = 'About';
   item2.appendChild(about);
@@ -35,7 +35,7 @@ const menuDisplay = () => {
 
   const item3 = document.createElement('li');
   const contact = document.createElement('a');
-  contact.href = '#contact-section';
+  contact.href = '#form-area1';
   contact.className = 'menu-content';
   contact.textContent = 'Contact';
   item3.appendChild(contact);
