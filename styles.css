@@ -740,11 +740,12 @@ label {
 #modal-delete {
   display: flex;
   justify-content: flex-end;
-  padding-top: 100px;
+  padding-top: 10px;
   font-size: 20px;
   color: #cdcac9;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
+  padding-right: 100px;
 
 }
 
