@@ -311,16 +311,16 @@ div3.appendChild(divG)
 
 // addEventListener-----
 
-const btn = document.querySelector('.get-my-resume-btn');
+// const btn = document.querySelector('.get-my-resume-btn');
 
-const click = document.querySelector('.click');
+// const click = document.querySelector('.click');
 
-console.log(click)
-btn.addEventListener('click', () => {
-  click.classList.add('hide')
-}
+// console.log(click)
+// btn.addEventListener('click', () => {
+//   click.classList.add('hide')
+// }
 
-)
+// )
 
 
 
