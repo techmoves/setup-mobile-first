@@ -21,10 +21,40 @@ section > div {
   max-width: 1440px;
 }
 
+ /* ---------------------popUp section----------------------- */
+
 a {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color:white;
+
 }
+
+.popup-para {
+  align-content: center;
+  margin: 0 16px;
+}
+
+.popup-photo {
+  margin: 14px 16px;
+  align-content: center;
+}
+
+#top-popup {
+  margin: 14px 16px;
+  align-content: center;
+
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 16px;
+}
+
+ /* ---------------------popUp section-------------------end---- */
+
 
 body {
   margin: 0;
@@ -161,7 +191,15 @@ p {
   flex-direction: row;
   gap: 20px;
 }
+/* -----------------------------js----------------------- */
 
+
+#para-popup {
+  width: 90vw;
+  height: 80vh;
+  top: 10%;
+  left: 4%;
+}
 /* ----------------mobile version---------------- */
 
 /* my recent works */
@@ -405,6 +443,8 @@ article {
   color: #f4f5f7;
 }
 
+
+
 .see-project-btn {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -427,6 +467,9 @@ article {
   width: 100%;
   color: white;
   flex-wrap: wrap;
+}
+.click.hide {
+  display: none;
 }
 
 #last-name {
