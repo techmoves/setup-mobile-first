@@ -82,7 +82,10 @@ const workSection = document.querySelector('#work-section');
     </div>
     
     <div class="pic-ajust">
-        <img class="recent-pic" src="images/cards-img.png" alt="recent photo">
+  
+    <img class="recent-pic" src="images/cards-img.png" alt="recent photo"> 
+    
+      
         <div class="work-story">
             <h3 class="top-stories">Multi-Post Stories </h3>
             <span class="recent-para">
@@ -221,7 +224,6 @@ const workSection = document.querySelector('#work-section');
         <li class="stack-position">${cardData[0].lists[0].html}</li>
         <li class="stack-position">${cardData[0].lists[0].bootstrap}</li>
         <li class="stack-position">${cardData[0].lists[0].ruby}</li>
-       
         </ul>
     </div>
     <button type="button" class="see-project-btn">${cardData[0].btn} </button>
@@ -237,7 +239,7 @@ const workSection = document.querySelector('#work-section');
     <div class="programs">
         <ul class="position-items">
         <li class="stack-position">${cardData[1].lists[0].html}</li>
-        <li class="stack-position">${cardData[1].lists[0].bootstrap}</li>
+        <li class="stack-position">${cardData[1].lists[0].bootstrap}<li>
         <li class="stack-position">${cardData[1].lists[0].ruby}</li>
        
         </ul>
@@ -309,6 +311,86 @@ divG.innerHTML = `
 div3.appendChild(divG)
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+const popup = (
+
+  heading,
+  text,
+  imageLink,
+  lists,
+  liveLink,
+  sourceLink,
+) => `<div class="overlay" id="popup-${}">
+    <div class="popupContainer">
+    <div class="popup-photo">
+    <img class="recent-pic" src="images/snapshoot.png" alt="snapshoot Portfolio">
+</div>
+      <div class="closeBtnContainer">
+      <div class="btn">
+      <button type="button" class="get-my-resume-btn">See live <a href="#"><img src="images/Icon2g.png" alt="GitHub" class="github"> </button>
+      <button type="button" class="get-my-resume-btn">See source  <a href="#"><img src="images/github.png" alt="GitHub" class="github"></a> </button>
+</div>
+      </div>
+      <div class="popDiv">
+        <div class="popDiv1">
+        <h2>${cardData[0].heading}</h2>
+          <div class="programs">
+          <ul class="position-items">
+          <li class="stack-position">${cardData[3].lists[0].html}</li>
+          <li class="stack-position">${cardData[3].lists[0].bootstrap}</li>
+          <li class="stack-position">${cardData[3].lists[0].ruby}</li>
+          </ul>
+      </div>
+      <p class="data-arc">
+      ${cardData[1].text}
+    </p>
+        <div class="popDiv3 popupBtnContainer">
+          <button class="popupBtn">
+            <a href="${liveLink}">See Live</a>
+            <img src="images/Icon2g.png" alt="GitHub" class="github">
+          </button>
+          <button class="popupBtn">
+            <a href="${sourceLink}">See Source</a>
+            <img src="images/github.png" alt="GitHub" class="github">>
+          </button>
+        </div> 
+      </div>
+    </div>
+  </div>`;
+
+
+// ---------------------------------------------------------------------------------------------------------
+
+// --------add addEventListener for project button---
+cardData.forEach((project) => {
+  const showBtn = document.getElementById(`get-my-resume-btn`);
+  showBtn.addEventListener('click', () => {
+    const showPop = document.getElementById(`get-my-resume-btn`);
+    showPop.style.display = 'flex';
+  });
+});
+
+cardData.forEach((project) => {
+  const closeBtn = document.getElementById(`get-my-resume-btn`);
+  closeBtn.addEventListener('click', () => {
+    const showpop2 = document.getElementById(`get-my-resume-btn`);
+    showpop2.style.display = 'none';
+  });
+});
+
+cardData.forEach((project) => {
+  const deskCloseBtn = document.getElementById(`get-my-resume-btn`);
+  deskCloseBtn.addEventListener('click', () => {
+    const showpop3 = document.getElementById(`get-my-resume-btn`);
+    showpop3.style.display = 'none';
+  });
+});
+
+
+
+
+// --------------------------------------------end-------------------
 // addEventListener-----
 
 // const btn = document.querySelector('.get-my-resume-btn');
