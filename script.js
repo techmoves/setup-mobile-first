@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector('.humburger');
 
 const menuDisplay = () => {
