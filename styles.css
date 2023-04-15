@@ -766,6 +766,15 @@ label {
   margin-bottom: 20px;
 }
 
+/* Form Validation styling by Charles */
+
+#msg {
+  color: red;
+  font-family: Inter, 'Times New Roman', Times, serif;
+  height: 3rem;
+  padding-left: 1rem;
+}
+
 /* end of modal styling */
 
 /* ------------------------destop version-------------------------- */
