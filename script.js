@@ -60,14 +60,7 @@ const menuDisplay = () => {
 };
 menuBtn.addEventListener('click', menuDisplay);
 
-
-
-
-
-
 // ---------------form validation
-
-
 
 // const email = document.querySelector('#e-mail');
 // const emailMob = document.querySelector('#e-mail-mob');
@@ -79,9 +72,6 @@ menuBtn.addEventListener('click', menuDisplay);
 const form = document.querySelector('form');
 const email = document.querySelector('#email-id');
 const errorMessage = document.querySelector('#msg');
-console.log(errorMessage);
-
-
 
 function isValid(str) {
   if (str.toLowerCase() !== str) {
