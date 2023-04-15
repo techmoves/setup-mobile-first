@@ -1,3 +1,7 @@
+// const { default: validation } = require("ajv/dist/vocabularies/validation");
+
+const { message } = require("statuses");
+
 const menuBtn = document.querySelector('.humburger');
 
 const menuDisplay = () => {
@@ -55,3 +59,41 @@ const menuDisplay = () => {
   deleteBtn.addEventListener('click', removeModal);
 };
 menuBtn.addEventListener('click', menuDisplay);
+
+
+
+
+
+
+// ---------------form validation
+
+
+
+// const email = document.querySelector('#e-mail');
+// const emailMob = document.querySelector('#e-mail-mob');
+// const messageMob = document.querySelector('.message-mob');
+// const messageDesk = document.querySelector('.message-desk');
+// const formDesktop = document.querySelector('.main-form');
+// const formMobile = document.querySelector('.form-mobile');
+
+const form = document.querySelector('form');
+const email = document.querySelector('#email-id');
+const message = document.querySelector('#msg');
+
+
+
+function isValid(str) {
+  if (str.toLowerCase() !== str) {
+    return false;
+  }
+  return true;
+}
+
+form.addEventListener('submit', (event) => {
+  if (isValid(email.value) === false) {
+    message.textContent = 'Email must be in lowercase!';
+    event.preventDefault();
+  } else {
+    message.textContent = '';
+  }
+});
