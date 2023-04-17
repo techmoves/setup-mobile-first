@@ -32,3 +32,16 @@ const menuDisplay = () => {
     modal.style.visibility = 'hidden';
   });
 
+  // featuer added by gergito
+  const item3 = document.createElement('li');
+  const contact = document.createElement('a');
+  contact.href = '#form-area1';
+  contact.className = 'menu-content';
+  contact.textContent = 'Contact';
+  item3.appendChild(contact);
+  contact.addEventListener('click', () => {
+    modal.style.visibility = 'hidden';
+  });
+
+
+
