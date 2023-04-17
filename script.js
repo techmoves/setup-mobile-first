@@ -32,6 +32,7 @@ const menuDisplay = () => {
     modal.style.visibility = 'hidden';
   });
 
+  // featuer added by gergito
   const item3 = document.createElement('li');
   const contact = document.createElement('a');
   contact.href = '#form-area1';
@@ -55,25 +56,3 @@ const menuDisplay = () => {
   deleteBtn.addEventListener('click', removeModal);
 };
 menuBtn.addEventListener('click', menuDisplay);
-
-// ---------------form validation
-
-const form = document.querySelector('form');
-const email = document.querySelector('#email-id');
-const errorMessage = document.querySelector('#msg');
-
-function isValid(str) {
-  if (str.toLowerCase() !== str) {
-    return false;
-  }
-  return true;
-}
-
-form.addEventListener('submit', (event) => {
-  if (isValid(email.value) === false) {
-    errorMessage.textContent = 'Email must be in lowercase!';
-    event.preventDefault();
-  } else {
-    errorMessage.textContent = '';
-  }
-});
