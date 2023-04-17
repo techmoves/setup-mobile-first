@@ -56,3 +56,18 @@ const menuDisplay = () => {
   deleteBtn.addEventListener('click', removeModal);
 };
 menuBtn.addEventListener('click', menuDisplay);
+
+
+
+// ---------------form validation
+
+const form = document.querySelector('form');
+const email = document.querySelector('#email-id');
+const errorMessage = document.querySelector('#msg');
+
+function isValid(str) {
+  if (str.toLowerCase() !== str) {
+    return false;
+  }
+  return true;
+}
