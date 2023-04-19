@@ -57,8 +57,6 @@ const menuDisplay = () => {
 };
 menuBtn.addEventListener('click', menuDisplay);
 
-
-
 // ---------------form validation
 
 const form = document.querySelector('form');
