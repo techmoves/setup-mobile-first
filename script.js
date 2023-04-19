@@ -76,7 +76,7 @@ formMobile.addEventListener('change', () => {
   const formDataMobile = {
     name: mobileName.value,
     email: emailMob.value,
-    text: mobileText.value,
+    mass: mobileText.value,
   };
   const stringifyFormDataMobile = JSON.stringify(formDataMobile);
   localStorage.setItem('mobileData', stringifyFormDataMobile);
@@ -93,13 +93,12 @@ formDesktop.addEventListener('change', () => {
 });
 
 const storedMobileData = JSON.parse(localStorage.getItem('mobileData'));
-const storedDesktopData = JSON.parse(localStorage.getItem('desktopData'));
+
 
 window.addEventListener('load', () => {
   mobileName.value = storedMobileData.name;
   emailMob.value = storedMobileData.email;
   mobileText.value = storedMobileData.text;
-  desktopName.value = storedDesktopData.name;
-  email.value = storedDesktopData.email;
-  desktopText.value = storedDesktopData.text;
+  
+ 
 });
