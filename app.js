@@ -1,272 +1,188 @@
-const mobileVersionContainer = document.querySelector('[data-main]');
-const menuButton = document.querySelector('[data-menu]');
-
-const menuDisplay = () => {
-  const modal = document.createElement('section');
-  modal.id = 'custom-modal';
-
-  const deleteButton = document.createElement('div');
-  deleteButton.textContent = 'X';
-  deleteButton.id = 'modal-delete';
-  modal.appendChild(deleteButton);
-
-  const menuList = document.createElement('ul');
-  menuList.id = 'menu-list';
-
-  const item1 = document.createElement('li');
-  const portfolio = document.createElement('a');
-  portfolio.href = '#works-section';
-  portfolio.className = 'menu-content';
-  portfolio.textContent = 'Portfolio';
-  item1.appendChild(portfolio);
-  portfolio.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
-  });
-
-  const item2 = document.createElement('li');
-  const about = document.createElement('a');
-  about.href = '#about-section';
-  about.className = 'menu-content';
-  about.textContent = 'About';
-  item2.appendChild(about);
-  about.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
-  });
-
-  const item3 = document.createElement('li');
-  const contact = document.createElement('a');
-  contact.href = '#contact-section';
-  contact.className = 'menu-content';
-  contact.textContent = 'Contact';
-  item3.appendChild(contact);
-  contact.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
-  });
-
-  menuList.appendChild(item1);
-  menuList.appendChild(item2);
-  menuList.appendChild(item3);
-  modal.appendChild(menuList);
-  mobileVersionContainer.appendChild(modal);
-
-  const removeModal = () => {
-    modal.style.visibility = 'hidden';
-  };
-
-  deleteButton.addEventListener('click', removeModal);
-};
-menuButton.addEventListener('click', menuDisplay);
-
-// Portfolio details popup window
-
-const workSection = document.querySelector('#works-section');
-
-// ...Create the unique card...
-
-const uniqueCard = () => {
-  const workSectionTitle = document.createElement('div');
-  workSectionTitle.className = 'works-title-block';
-  workSectionTitle.innerHTML = `
-    <h3 class="title flex">My Recent Works</h3>
-    <div class="divider-desktop">
-      <img class="desktop-divider" src="images/desktop-divider.png" alt="">
-    </div>
-  </div>
-  <div class="crossline"><img src="images/Vector (2).png" alt=""></div>
-  `;
-  workSection.appendChild(workSectionTitle);
-
-  const worksCard = document.createElement('div');
-  worksCard.className = 'works-card';
-  worksCard.innerHTML = `
-    <div class="yoga-placeholder"><img src="images/Img Placeholder.png" alt=""></div>
-    <h3 id="bold-text" class="flex">Multi-Post Stories</h3>
-    <p id="works-description">A daily selection of privately personalized reads; no    accounts or sign-ups required.
-      has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
-      dummy text.</p>
-    <ul id="competencies" class="flex">
-      <li>CSS</li>
-      <li>HTML</li>
-      <li>JAVASCRIPT</li>
-    </ul>
-    <button type="button" class="btn-type-a flex">See project</button>`;
-  workSection.appendChild(worksCard);
-};
-uniqueCard();
-
-function worksDesktop() {
-  const worksCardDesktop = document.createElement('div');
-  worksCardDesktop.className = 'works-card-desktop';
-  worksCardDesktop.innerHTML = `
-  <img src="images/Img Placeholder.png" alt="" class="project-cards flex">
-  <div class="extras side-text">
-    <h3 id="bold-text">Multi-Post Stories</h3>
-    <p id="works-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-    <ul id="competencies" class="flex">
-      <li>CSS</li>
-      <li>HTML</li>
-      <li>Bootstrap</li>
-      <li>Ruby</li>
-    </ul>
-    <button type="button" class="btn-type-a">See project</button>
-  </div>`;
-  workSection.appendChild(worksCardDesktop);
-}
-
-worksDesktop();
-
-// ...Create recurring cards...
-
-const cardsContainer = document.createElement('div');
-cardsContainer.className = 'grid-container';
+// const { topHeading } = require("npmlog")
 
 const cardData = [
-    {
-      heading: 'Data Dashboard ',
-      text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      lists: [
-        {
-          html: 'html',
-          bootstrap: 'bootstrap',
-          ruby: 'ruby'
-        }
-      ],
-      btn: 'see project'
+  {
+    topHeading: 'My Recent Works',
+    imgLine: 'images/line.png',
+  },
+  {
+    img1: 'images/gym-image.png',
+    img2: 'images/gym 2.png',
+    topHeading: 'Multi Post Stories',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s when an unknown printer took a standard dummy text.",
+    link: 'https://github.com/tumainimaganiko/Portfolio',
+    popUpmg: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+  {
+    topHeading: 'Profesional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: '',
+    techStack: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    popUpmg: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+  {
+    topHeading: 'Website Portfolio',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: '',
+    techStack: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    popUpmg: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+  {
+    topHeading: 'Profesional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: '',
+    techStack: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    imgCard: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+  {
+    topHeading: 'Profesional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: '',
+    techStack: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    popUpmg: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+  {
+    topHeading: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: '',
+    techStack: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    popUpmg: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+  {
+    topHeading: 'Website Portfolio',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: '',
+    techStack: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    popUpmg: 'images/snapshoot.png',
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: '',
+  },
+];
 
-    },
-    {
-      heading: 'Data Dashboard ',
-      text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      lists: [
-        {
-          html: 'html',
-          bootstrap: 'bootstrap',
-          ruby: 'ruby'
-        }
-      ],
-      btn: 'see project'
+const works = document.querySelector('.works');
+function inputFunction(value, index) {
+  const div = document.createElement('div');
+  div.id = index;
+  if (index === 0) {
+    div.className = 'card-1';
+    div.innerHTML = `
+    <h2 >${value.topHeading}</h2>
+    <img src="${value.imgLine}" alt="line">
+    `;
+  } else if (index === 1) {
+    div.className = 'card-2';
+    div.id = index;
+    div.innerHTML = `
+    <img id="gym-1" src="${value.img1}" alt="Placeholder">
+    <img id="gym-2" src="${value.img2}" alt="Placeholder">
+    <div id="1">
+        <h3 id="story">${value.topHeading}</h3>
+    <p>${value.description}</p>
+    <ul class="link-1 btn">
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">RUBY</a></li>
+    </ul>
+    <a class="see-project btn-click button-1" href="">See project</a>
+    </div>
+    `;
+  } else {
+    div.className = 'card-3';
+    div.id = index;
+    div.innerHTML = `
+  <h2>${value.topHeading}</h2>
+  <p>${value.description}</p>
+  <ul class="link-1">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">RUBY</a></li>
+  </ul>
+  <a  class="see-project none btn-click" href="">See project</a>
+  `;
+  }
+  works.appendChild(div);
+}
+cardData.forEach(inputFunction);
 
-    },
-    {
-      heading: 'Data Dashboard ',
-      text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      lists: [
-        {
-          html: 'html',
-          bootstrap: 'bootstrap',
-          ruby: 'ruby'
-        }
-      ],
-      btn: 'see project'
+const btnClick = document.querySelectorAll('.btn-click');
 
-    },
-    {
-      heading: 'Data Dashboard ',
-      text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      lists: [
-        {
-          html: 'html',
-          bootstrap: 'bootstrap',
-          ruby: 'ruby'
-        }
-      ],
-      btn: 'see project'
-
-    },
-    {
-      heading: 'Data Dashboard ',
-      text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      lists: [
-        {
-          html: 'html',
-          bootstrap: 'bootstrap',
-          ruby: 'ruby'
-        }
-      ],
-      btn: 'see project'
-
-    },
-    {
-      heading: 'Data Dashboard ',
-      text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-      lists: [
-        {
-          html: 'html',
-          bootstrap: 'bootstrap',
-          ruby: 'ruby'
-        }
-      ],
-      btn: 'see project'
-
-    },
-  ]
-
-function recurringCards(arr) {
-  for (let i = 0; i < arr.length; i += 1) {
-    const card = document.createElement('div');
-    card.className = 'details';
-    const cardDetails = arr[i];
-    card.innerHTML = `
-    <h2>${cardData[0].heading}</h2>
-    <p class="data-arc">
-      ${cardData[0].text}
-    </p>
-    <div class="programs">
-        <ul class="position-items">
-        <li class="stack-position">${cardData[0].lists[0].html}</li>
-        <li class="stack-position">${cardData[0].lists[0].bootstrap}</li>
-        <li class="stack-position">${cardData[0].lists[0].ruby}</li>
+btnClick.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const x = btn.parentNode.id;
+    const overlay = document.querySelector('#overlay');
+    overlay.style.display = 'block';
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.id = 'modal';
+    modal.style.display = 'block';
+    modal.innerHTML = `
+    <div class="modal-header">
+    <h2 class="h2-color">${cardData[x].topHeading}</h2>
+    <button class="close-button">&times;</button>
+</div>
+<ul>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">Bootstrap</a></li>
+    <li><a href="#">Ruby on Rails</a></li>
+</ul>
+<div class="modal-body">
+   
+    <img src="${cardData[x].popUpmg}" alt="">
+    <div>
+        <p>${cardData[x].details}</p>
+        <ul class="bottom-btn">
+            <li id="first-list"><a href="#${cardData[x].liveLink}"><span>See live</span><img src="images/watch.png" alt=""></a></li>
+            <li><a href="#${cardData[x].sourceLink}"><span>See Source</span><img src="images/github.png" alt=""></a></li>
         </ul>
     </div>
-    <button type="button" class="see-project-btn">${cardData[0].btn} </button>`;
-    cardsContainer.appendChild(card);
+</div>
+</div>
+    `;
+    works.append(modal);
+  });
+});
+
+document.addEventListener('click', (e) => {
+  const modal = document.querySelector('.modal');
+  const target = e.target.closest('.close-button');
+  const overlay = document.querySelector('#overlay');
+  if (target) {
+    modal.remove();
+    overlay.style.display = 'none';
   }
-  return cardsContainer;
-}
-recurringCards(projectData);
-workSection.appendChild(cardsContainer);
-
-const cardButton = document.querySelectorAll('.btn-type-b');
-
-function loopButton(arr, brr) {
-  for (let i = 0; i < arr.length; i += 1) {
-    const popupBtn = arr[i];
-    popupBtn.addEventListener('click', () => {
-      for (let j = 0; j < brr.length; j += 1) {
-        if (j === i) {
-          const details = brr[j];
-          const detailsPopup = document.createElement('section');
-          detailsPopup.id = 'details-popup';
-          detailsPopup.innerHTML = `
-            <div class="popup-header flex">
-            <h3 class="bold-text">${details.name}</h3>
-            <button id="popup-close">X</button></div>
-            <ul class="competencies flex popup-technologies">
-              <li>${details.technologies.tech1}</li>
-              <li>${details.technologies.tech2}</li>
-              <li>${details.technologies.tech2}</li>
-            </ul>
-            <div class="popup-body flex">
-              <img src="images/Snapshoot Portfolio.png" alt="" class="popup-image">
-              <div class="side-text">
-                <div class="works-description popup-text">${details.description}</div>
-                <div class="demoButtons flex">
-                  <a href=${details['Link to live version']} class="btn-type-a">See live <img src="images/github.png" alt="GitHub" class="github"width='13'></a>
-                  <a href=${details['Link to live version']} class="btn-type-a">See source <img src="images/icon2g.png" alt="GitHub" class="github"width='13'></a>
-                </div>
-              </div>
-            </div>`;
-          mobileVersionContainer.appendChild(detailsPopup);
-
-          const popupClose = document.querySelector('#popup-close');
-          const popHeader = document.querySelector('.popup-header');
-          popupClose.addEventListener('click', () => {
-            popHeader.parentNode.remove();
-          });
-        }
-      }
-    });
-  }
-}
-
-loopButton(cardButton, dataArc);
+});

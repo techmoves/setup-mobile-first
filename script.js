@@ -84,8 +84,7 @@ const workSection = document.querySelector('#work-section');
     <div class="pic-ajust">
   
     <img class="recent-pic" src="images/cards-img.png" alt="recent photo"> 
-    
-      
+
         <div class="work-story">
             <h3 class="top-stories">Multi-Post Stories </h3>
             <span class="recent-para">
@@ -134,78 +133,42 @@ const workSection = document.querySelector('#work-section');
       {
         heading: 'Data Dashboard ',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: [
-          {
-            html: 'html',
-            bootstrap: 'bootstrap',
-            ruby: 'ruby'
-          }
-        ],
+        lists: ['html','bootstrap','ruby'],
         btn: 'see project'
 
       },
       {
         heading: 'Data Dashboard ',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: [
-          {
-            html: 'html',
-            bootstrap: 'bootstrap',
-            ruby: 'ruby'
-          }
-        ],
+        lists: ['html','bootstrap','ruby'],
         btn: 'see project'
 
       },
       {
         heading: 'Data Dashboard ',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: [
-          {
-            html: 'html',
-            bootstrap: 'bootstrap',
-            ruby: 'ruby'
-          }
-        ],
+        lists: ['html','bootstrap','ruby'],
         btn: 'see project'
 
       },
       {
         heading: 'Data Dashboard ',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: [
-          {
-            html: 'html',
-            bootstrap: 'bootstrap',
-            ruby: 'ruby'
-          }
-        ],
+        lists: ['html','bootstrap','ruby'],
         btn: 'see project'
 
       },
       {
         heading: 'Data Dashboard ',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: [
-          {
-            html: 'html',
-            bootstrap: 'bootstrap',
-            ruby: 'ruby'
-          }
-        ],
+        lists:  ['html','bootstrap','ruby'],
         btn: 'see project'
 
       },
       {
         heading: 'Data Dashboard ',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: [
-          {
-            html: 'html',
-            bootstrap: 'bootstrap',
-            ruby: 'ruby'
-          }
-        ],
+        lists:  ['html','bootstrap','ruby'],      
         btn: 'see project'
 
       },
@@ -221,9 +184,9 @@ const workSection = document.querySelector('#work-section');
     </p>
     <div class="programs">
         <ul class="position-items">
-        <li class="stack-position">${cardData[0].lists[0].html}</li>
-        <li class="stack-position">${cardData[0].lists[0].bootstrap}</li>
-        <li class="stack-position">${cardData[0].lists[0].ruby}</li>
+        <li class="stack-position">${cardData[0].lists[0]}</li>
+        <li class="stack-position">${cardData[0].lists[1].bootstrap}</li>
+        <li class="stack-position">${cardData[0].lists[2].ruby}</li>
         </ul>
     </div>
     <button type="button" class="see-project-btn">${cardData[0].btn} </button>
