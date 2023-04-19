@@ -69,3 +69,11 @@ function isValid(str) {
   }
   return true;
 }
+form.addEventListener('submit', (event) => {
+  if (isValid(email.value) === false) {
+    errorMessage.textContent = 'Email must be in lowercase!';
+    event.preventDefault();
+  } else {
+    errorMessage.textContent = '';
+  }
+});
