@@ -72,33 +72,33 @@ menuBtn.addEventListener('click', menuDisplay);
 
 // ...portfolio-Preserve data in the browser...
 
-formMobile.addEventListener('change', () => {
-  const formDataMobile = {
-    name: mobileName.value,
-    email: emailMob.value,
-    mass: mobileText.value,
-  };
-  const stringifyFormDataMobile = JSON.stringify(formDataMobile);
-  localStorage.setItem('mobileData', stringifyFormDataMobile);
-});
+// formMobile.addEventListener('change', () => {
+//   const formDataMobile = {
+//     name: mobileName.value,
+//     email: emailMob.value,
+//     mass: mobileText.value,
+//   };
+//   const stringifyFormDataMobile = JSON.stringify(formDataMobile);
+//   localStorage.setItem('mobileData', stringifyFormDataMobile);
+// });
 
-formDesktop.addEventListener('change', () => {
-  const formDataDesktop = {
-    name: desktopName.value,
-    email: email.value,
-    text: desktopText.value,
-  };
-  const stringifyFormDataDesktop = JSON.stringify(formDataDesktop);
-  localStorage.setItem('desktopData', stringifyFormDataDesktop);
-});
+// formDesktop.addEventListener('change', () => {
+//   const formDataDesktop = {
+//     name: desktopName.value,
+//     email: email.value,
+//     text: desktopText.value,
+//   };
+//   const stringifyFormDataDesktop = JSON.stringify(formDataDesktop);
+//   localStorage.setItem('desktopData', stringifyFormDataDesktop);
+// });
 
-const storedMobileData = JSON.parse(localStorage.getItem('mobileData'));
+// const storedMobileData = JSON.parse(localStorage.getItem('mobileData'));
 
 
-window.addEventListener('load', () => {
-  mobileName.value = storedMobileData.name;
-  emailMob.value = storedMobileData.email;
-  mobileText.value = storedMobileData.text;
+// window.addEventListener('load', () => {
+//   mobileName.value = storedMobileData.name;
+//   emailMob.value = storedMobileData.email;
+//   mobileText.value = storedMobileData.text;
   
  
-});
+// });
