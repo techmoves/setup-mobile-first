@@ -42,16 +42,3 @@ const menuDisplay = () => {
     modal.style.visibility = 'hidden';
   });
 
-  menuList.appendChild(item1);
-  menuList.appendChild(item2);
-  menuList.appendChild(item3);
-  modal.appendChild(menuList);
-  document.body.appendChild(modal);
-
-  const removeModal = () => {
-    modal.style.visibility = 'hidden';
-  };
-
-  deleteBtn.addEventListener('click', removeModal);
-};
-menuBtn.addEventListener('click', menuDisplay);
