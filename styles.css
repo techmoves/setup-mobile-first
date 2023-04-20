@@ -433,7 +433,7 @@ article {
   gap: 20px;
   margin-top: 60px;
   margin-bottom: 100px;
-  padding: 0 5%;
+  padding: 0 3%;
 }
 .web-padd {
   display: none;
@@ -1294,6 +1294,81 @@ label {
     transform-origin: 1%;
     transition-duration: 0.1s;
   }
+
+  
+/* -----hover-----on cards--- */
+.button-hov {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.button-hov:visited {
+  background-color: #ff6b00;
+}
+
+.button-hov:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+  transform: translate(5px, 5px);
+}
+
+.button-hov:active {
+  background-color: #e05304;
+  color: #fff;
+}
+
+.button-hov:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+.details .details2:hover {
+  transform: scale(1.08);
+  background-image: url("images/1st.png");
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details .details2 {
+  margin: 12px;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.none {
+  display: none;
+}
+
+.details .details2:hover {
+  transform: scale(1.08);
+  background-image: url("images/Mask\ Group.png");
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details .details2:hover .none {
+  display: block;
+  width: 100%;
+}
+
+.contact-form h2 {
+  min-width: 30%;
+  margin-left: 7%;
+}
+
+.details .details2:hover h2 {
+  display: none;
+}
+
+.details .details2:hover p {
+  display: none;
+}
+
+.details .details2:hover ul {
+  display: none;
+}
+
 }
 /* --------------------popup------------ */
 
