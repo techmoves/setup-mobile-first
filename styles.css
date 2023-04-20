@@ -1323,31 +1323,37 @@ label {
   background-color: #f4f1f0;
   color: #5b5957;
 }
-.details .details2:hover {
+.details.details2.details1:hover {
   transform: scale(1.08);
   background-image: url("images/1st.png");
   display: flex;
   justify-content: flex-end;
 }
 
-.details .details2 {
+.details.details2 {
   margin: 12px;
   align-items: center;
   transition: all 0.4s ease-in-out;
 }
 
-.none {
+.hov{
   display: none;
 }
 
-.details .details2:hover {
+.details.details2.details1:hover {
   transform: scale(1.08);
-  background-image: url("images/Mask\ Group.png");
+  background-image: url("images/1st.png");
+  display: flex;
+  justify-content: flex-end;
+}
+.details:hover {
+  transform: scale(1.08);
+  background-image: url("images/1st.png");
   display: flex;
   justify-content: flex-end;
 }
 
-.details .details2:hover .none {
+.details.details2:hover .hov {
   display: block;
   width: 100%;
 }
@@ -1357,16 +1363,19 @@ label {
   margin-left: 7%;
 }
 
-.details .details2:hover h2 {
+.details.details2:hover h2 {
   display: none;
 }
 
-.details .details2:hover p {
+.details.details2:hover p {
   display: none;
 }
 
-.details .details2:hover ul {
+.details.details2:hover ul li {
   display: none;
+}
+.details.details1:hover {
+
 }
 
 }
