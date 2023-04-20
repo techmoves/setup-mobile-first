@@ -1338,6 +1338,8 @@ label {
 
 .hov{
   display: none;
+  padding: 12px;
+  margin-top: 250px;
 }
 
 .details.details2.details1:hover {
@@ -1358,11 +1360,6 @@ label {
   width: 100%;
 }
 
-.contact-form h2 {
-  min-width: 30%;
-  margin-left: 7%;
-}
-
 .details.details2:hover h2 {
   display: none;
 }
@@ -1374,9 +1371,7 @@ label {
 .details.details2:hover ul li {
   display: none;
 }
-.details.details1:hover {
 
-}
 
 }
 /* --------------------popup------------ */
