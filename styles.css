@@ -1342,7 +1342,7 @@ label {
   margin-top: 250px;
 }
 
-.details.details2.details1:hover {
+.details.details2.details1.details.details1:hover {
   transform: scale(1.08);
   background-image: url("images/1st.png");
   display: flex;
