@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+}
+#portfolio .title {
+  display: flex;
+}
+#portfolio .title hr {
+  width: 50%;
+}
+#portfolio #cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.5rem;
+}
+#portfolio #cards .plchdr {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+}
+#portfolio #cards .plchdr .img img {
+  width: 100%;
+  height: auto;
+}
+#portfolio #cards .plchdr .text {
+  display: flex;
+  flex-direction: column;
+}
+#portfolio #cards .plchdr .text h3 {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+}
+#portfolio #cards .plchdr .text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #091e42;
+}
+#portfolio #cards .plchdr .text ul {
+  display: flex;
+  gap: 1rem;
+}
+#portfolio #cards .plchdr .text li {
+  padding: 0.6rem;
+  border: 1px solid #000;
+}
+#portfolio #cards .card {
+  height: 475px;
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+#portfolio #cards .card h3 {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 12.5rem;
+}
+#portfolio #cards .card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 1rem;
+}
+#portfolio #cards .card ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+#portfolio #cards .card ul li {
+  padding: 0.6rem;
+  border: 1px solid #000;
+}
+#portfolio #cards .card button {
+  display: none;
+}
+#portfolio #cards .card:hover {
+  flex-direction: column-reverse;
+}
+#portfolio #cards .card:hover h3 {
+  display: none;
+}
+#portfolio #cards .card:hover p {
+  display: none;
+}
+#portfolio #cards .card:hover ul {
+  display: none;
+}
+#portfolio #cards .card:hover button {
+  display: block;
+}
+#portfolio #cards .cd1,
+#portfolio #cards .cd4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/bg-img.png");
+}
+#portfolio #cards .cd2,
+#portfolio #cards .cd5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/availabilty.png");
+}
+#portfolio #cards .cd3,
+#portfolio #cards .cd6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/webportfolio.png");
+}
+
+@media screen and (min-width: 768px) {
+  #portfolio #cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #portfolio #cards .plchdr {
+    grid-column: 1/4;
+    flex-direction: row;
+  }
+  #portfolio #cards .plchdr .img {
+    width: 50%;
+  }
+  #portfolio #cards .plchdr .text {
+    width: 50%;
+  }
+  #portfolio #cards .plchdr .text h3 {
+    margin-left: 2rem;
+  }
+  #portfolio #cards .plchdr .text p {
+    width: 70%;
+    margin-left: 2rem;
+  }
+  #portfolio #cards .plchdr .text ul {
+    margin-left: 2rem;
+  }
+  #portfolio #cards .plchdr .text button {
+    width: 124px;
+    height: 48px;
+    background: #f55800;
+    margin-left: 2rem;
+    margin-top: 3.5rem;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+  }
+}/*# sourceMappingURL=repair.css.map */

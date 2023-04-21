@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+
+    hr {
+      width: 50%;
+    }
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+
+    .plchdr {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1/2;
+
+      .img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-family: "Crete Round";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 52px;
+          color: #091e42;
+        }
+
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          color: #091e42;
+        }
+
+        ul {
+          display: flex;
+          gap: 1rem;
+        }
+        li {
+          padding: 0.6rem;
+          border: 1px solid #000;
+        }
+      }
+    }
+
+    .card {
+      height: 475px;
+      max-width: 425px;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      h3 {
+        font-family: "Crete Round";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 12.5rem;
+      }
+
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #fff;
+        margin-top: 1rem;
+      }
+
+      ul {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.8rem;
+
+        li {
+          padding: 0.6rem;
+          border: 1px solid #000;
+        }
+      }
+
+      button {
+        display: none;
+      }
+
+      &:hover {
+          flex-direction: column-reverse;
+          
+        h3 {
+          display: none;
+        }
+        p {
+          display: none;
+        }
+        ul {
+          display: none;
+        }
+
+        button {
+          display: block;
+        }
+      }
+    }
+
+    .cd1,
+    .cd4 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("./images/bg-img.png");
+    }
+
+    .cd2,
+    .cd5 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("./images/availabilty.png");
+    }
+    .cd3,
+    .cd6 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("./images/webportfolio.png");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #portfolio {
+    #cards {
+      grid-template-columns: repeat(3, 1fr);
+
+      .plchdr {
+        grid-column: 1/4;
+        flex-direction: row;
+
+        .img {
+          width: 50%;
+        }
+
+        .text {
+          width: 50%;
+          h3 {
+            margin-left: 2rem;
+          }
+
+          p {
+            width: 70%;
+            margin-left: 2rem;
+          }
+
+          ul {
+            margin-left: 2rem;
+          }
+
+          button {
+            width: 124px;
+            height: 48px;
+
+            background: #f55800;
+            margin-left: 2rem;
+            margin-top: 3.5rem;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 24px;
+
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 // const { topHeading } = require("npmlog")
 
-const cardData = [
+export const cardData = [
   {
     topHeading: 'My Recent Works',
     imgLine: 'images/line.png',
