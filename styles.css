@@ -423,6 +423,9 @@ article {
   font-size: 17px;
   line-height: 24px;
 }
+.top-stories1 {
+  display: none;
+}
 
 .professional-art1 {
   display: none;
@@ -1284,6 +1287,34 @@ label {
     text-align: start;
   }
 
+  /* ------popUp----despop---- */
+  .popUp {
+   display: flex;
+  }
+
+  .top-popup {
+    display: flex;
+  }
+
+  .top-stories1 {
+    display: block;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 36px;
+    color: #091e42;
+  }
+  .destop5 {
+    display: f;
+  }
+  .top-stories {
+    display: none;
+  }
   /* --------------------------------this hover and animation forr more styling---------------------------- */
 
   .logo-art:hover {
@@ -1333,52 +1364,107 @@ label {
   justify-content: flex-end;
 }
 
+.details1:hover {
+  transform: scale(1.05);
+  background-image: url("images/1st.png");
+  display: flex;
+  justify-content: flex-end;
+}
+
 .details.details2 {
   margin: 12px;
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
+.details1.details1 {
+  margin: 12px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.details.details {
+  margin: 12px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.details.details1 .hov {
+  display: block;
+  width: 100%;
+}
+
 
 .hov{
-  display: block;
+  display: none;
   padding: 12px;
   margin-top: 250px;
 }
 
 .details.details2.details1.details.details1:hover {
-  transform: scale(1.08);
+  /* transform: scale(1.08); */
   background-image: url("images/1st.png");
   display: flex;
   justify-content: flex-end;
 }
-.detailskjh:hover {
-  transform: scale(1.08);
+.details:hover {
+  /* transform: scale(1.08); */
   background-image: url("images/1st.png");
   display: flex;
   justify-content: flex-end;
 }
 
-.details.details2:hover .hov {
+
+.details2.details2:hover .hov {
   display: block;
   width: 100%;
+  margin-top:20rem;
 }
 
-.details.details2:hover h2 {
+.details1.details1:hover .hov {
+  display: block;
+  width: 100%;
+  margin-top:20rem;
+}
+.details.details:hover .hov {
+  display: block;
+  width: 100%;
+  margin-top:20rem;
+}
+.details2.details2:hover h2 {
+  display: none;
+}
+.details1.details1:hover h2 {
+  display: none;
+}
+.details.details:hover h2 {
   display: none;
 }
 
-.details.details2:hover p {
+.details2.details2:hover p {
+  display: none;
+}
+.details.details:hover p {
+  display: none;
+}
+.details1.details1:hover p {
   display: none;
 }
 
-.details.details2:hover ul li {
+.details2.details2:hover ul li {
+  display: none;
+}
+.details.details:hover ul li {
   display: none;
 }
 
+.details1.details1:hover ul li {
+  display: none;
+}
+.details.details:hover ul li {
+  display: none;
+}
 
 }
 /* --------------------popup------------ */
 
 .popUp {
-  display: none;
+  display: block;
 }

@@ -98,6 +98,7 @@ menuBtn.addEventListener('click', menuDisplay);
       },
       {
         heading: 'Data Dashboard ',
+        heading2 : 'Website Portfolio',
         text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
         lists:  ['html','bootstrap','ruby'],      
         btn: 'see project'
