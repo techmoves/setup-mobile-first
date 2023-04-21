@@ -1,46 +1,45 @@
-
-const menuBtn = document.querySelector('.humburger');
+const menuBtn = document.querySelector(".humburger");
 
 const menuDisplay = () => {
-  const modal = document.createElement('section');
-  modal.id = 'custom-modal';
+  const modal = document.createElement("section");
+  modal.id = "custom-modal";
 
-  const deleteBtn = document.createElement('div');
-  deleteBtn.textContent = 'X';
-  deleteBtn.id = 'modal-delete';
+  const deleteBtn = document.createElement("div");
+  deleteBtn.textContent = "X";
+  deleteBtn.id = "modal-delete";
   modal.appendChild(deleteBtn);
 
-  const menuList = document.createElement('ul');
-  menuList.id = 'menu-list';
+  const menuList = document.createElement("ul");
+  menuList.id = "menu-list";
 
-  const item1 = document.createElement('li');
-  const portfolio = document.createElement('a');
-  portfolio.href = '#work-section';
-  portfolio.className = 'menu-content';
-  portfolio.textContent = 'Portfolio';
+  const item1 = document.createElement("li");
+  const portfolio = document.createElement("a");
+  portfolio.href = "#work-section";
+  portfolio.className = "menu-content";
+  portfolio.textContent = "Portfolio";
   item1.appendChild(portfolio);
-  portfolio.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
+  portfolio.addEventListener("click", () => {
+    modal.style.visibility = "hidden";
   });
 
-  const item2 = document.createElement('li');
-  const about = document.createElement('a');
-  about.href = '#about-me-sec';
-  about.className = 'menu-content';
-  about.textContent = 'About';
+  const item2 = document.createElement("li");
+  const about = document.createElement("a");
+  about.href = "#about-me-sec";
+  about.className = "menu-content";
+  about.textContent = "About";
   item2.appendChild(about);
-  about.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
+  about.addEventListener("click", () => {
+    modal.style.visibility = "hidden";
   });
 
-  const item3 = document.createElement('li');
-  const contact = document.createElement('a');
-  contact.href = '#form-area1';
-  contact.className = 'menu-content';
-  contact.textContent = 'Contact';
+  const item3 = document.createElement("li");
+  const contact = document.createElement("a");
+  contact.href = "#form-area1";
+  contact.className = "menu-content";
+  contact.textContent = "Contact";
   item3.appendChild(contact);
-  contact.addEventListener('click', () => {
-    modal.style.visibility = 'hidden';
+  contact.addEventListener("click", () => {
+    modal.style.visibility = "hidden";
   });
 
   menuList.appendChild(item1);
@@ -50,68 +49,61 @@ const menuDisplay = () => {
   document.body.appendChild(modal);
 
   const removeModal = () => {
-    modal.style.visibility = 'hidden';
+    modal.style.visibility = "hidden";
   };
 
-  deleteBtn.addEventListener('click', removeModal);
+  deleteBtn.addEventListener("click", removeModal);
 };
-menuBtn.addEventListener('click', menuDisplay);
-
+menuBtn.addEventListener("click", menuDisplay);
 
 //---------------------popUp section-----------------------
-    const cardData = [
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
+const cardData = [
+  {
+    heading: "Data Dashboard ",
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ["html", "bootstrap", "ruby"],
+    btn: "see project",
+  },
+  {
+    heading: "Data Dashboard ",
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ["html", "bootstrap", "ruby"],
+    btn: "see project",
+  },
+  {
+    heading: "Data Dashboard ",
+    heading2: "Website Portfolio",
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ["html", "bootstrap", "ruby"],
+    btn: "see project",
+  },
+  {
+    heading: "Data Dashboard ",
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ["html", "bootstrap", "ruby"],
+    btn: "see project",
+  },
+  {
+    heading: "Data Dashboard ",
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ["html", "bootstrap", "ruby"],
+    btn: "see project",
+  },
+  {
+    heading: "Data Dashboard ",
+    heading2: "Website Portfolio",
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ["html", "bootstrap", "ruby"],
+    btn: "see project",
+  },
+];
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
+const work = document.getElementById("test");
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        heading2 : 'Website Portfolio',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
-
-      },
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
-
-      },
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists:  ['html','bootstrap','ruby'],
-        btn: 'see project'
-
-      },
-      {
-        heading: 'Data Dashboard ',
-        heading2 : 'Website Portfolio',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists:  ['html','bootstrap','ruby'],      
-        btn: 'see project'
-
-      },
-    ]
-
-const work = document.getElementById('test');
-
-cardData.forEach((value,index) => {
-  const div = document.createElement('div');
+cardData.forEach((value, index) => {
+  const div = document.createElement("div");
   div.className = "details";
-  if(index === 0 || index === 3 ){
+  if (index === 0 || index === 3) {
     div.id = index;
     div.innerHTML = `
     <h2 class="card1-head">${value.heading}</h2>
@@ -126,8 +118,8 @@ cardData.forEach((value,index) => {
 
     </div>
      <button type="button" class="see-project-btn button-hov hov" id="1">See Project </button>
-    `
-  }else if (index === 1 || index === 4) {
+    `;
+  } else if (index === 1 || index === 4) {
     div.className = "details1";
     div.id = index;
     div.innerHTML = `
@@ -144,9 +136,9 @@ cardData.forEach((value,index) => {
     </div>
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
 
-    `
-  }else if (index === 2 || index === 5){
-    div.className = 'details2';
+    `;
+  } else if (index === 2 || index === 5) {
+    div.className = "details2";
     div.id = index;
     div.innerHTML = `
     <h2 class="mobile-head">${value.heading}</h2>
@@ -160,23 +152,23 @@ cardData.forEach((value,index) => {
         </ul>
     </div>
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
-    `
+    `;
   }
 
   work.appendChild(div);
-})
+});
 
-btnClick = document.querySelectorAll('.see-project-btn');
+btnClick = document.querySelectorAll(".see-project-btn");
 
-btnClick.forEach(btn => {
-  btn.addEventListener('click', (e) => {
+btnClick.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
     e.preventDefault();
     const x = btn.parentNode.id;
-    const pop = document.createElement('div');
-    const overlay = document.getElementById('overlay');
-    pop.className = 'popUp';
-    pop.style.display = 'block';
-    overlay.style.display = 'block';
+    const pop = document.createElement("div");
+    const overlay = document.getElementById("overlay");
+    pop.className = "popUp";
+    pop.style.display = "block";
+    overlay.style.display = "block";
     pop.innerHTML = `
     <div id="top-popup">
     <h3 class="top-stories">${cardData[x].heading} </h3>
@@ -206,22 +198,17 @@ btnClick.forEach(btn => {
 </div>
     `;
     work.appendChild(pop);
-  })
-})
+  });
+});
 
-document.addEventListener('click', (e) => {
-  const popUp = document.querySelector('.popUp');
-  const target = e.target.closest('.close-button');
-  const overlay = document.querySelector('#overlay');
+document.addEventListener("click", (e) => {
+  const popUp = document.querySelector(".popUp");
+  const target = e.target.closest(".close-button");
+  const overlay = document.querySelector("#overlay");
   if (target) {
     popUp.remove();
-    overlay.style.display = 'none';
+    overlay.style.display = "none";
     // overlay.classList.add('hidden');
   }
 });
-new branch---
-
-
-
-
-
+ the latest 
