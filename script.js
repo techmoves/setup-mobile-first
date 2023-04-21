@@ -110,7 +110,7 @@ const work = document.getElementById('test');
 cardData.forEach((value,index) => {
   const div = document.createElement('div');
   div.className = "details";
-  if(index === 0 || index === 3){
+  if(index === 0 || index === 3 ){
     div.innerHTML = `
     <h2>${value.heading}</h2>
     <p class="data-arc">${value.text}</p>

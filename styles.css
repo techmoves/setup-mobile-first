@@ -1340,7 +1340,7 @@ label {
 }
 
 .hov{
-  display: none;
+  display: block;
   padding: 12px;
   margin-top: 250px;
 }
@@ -1351,7 +1351,7 @@ label {
   display: flex;
   justify-content: flex-end;
 }
-.details:hover {
+.detailskjh:hover {
   transform: scale(1.08);
   background-image: url("images/1st.png");
   display: flex;
