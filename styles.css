@@ -486,6 +486,9 @@ article {
 #last-name {
   display: none;
 }
+.see-project-btn {
+  display: block;
+}
 
 
 
@@ -1246,7 +1249,7 @@ label {
   }
 
   .see-project-btn {
-    display: none;
+    /* display: none; */
   }
 
   /* --------------------------- .programs1, */
@@ -1541,4 +1544,8 @@ label {
   background-color: #000;
   color: #fff;
   cursor: pointer;
+}
+
+.popUp {
+  display: none;
 }
