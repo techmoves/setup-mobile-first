@@ -1302,7 +1302,7 @@ label {
 /* -----hover-----on cards--- */
 .button-hov {
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-timing-function: ease-out;
 }
 
@@ -1327,7 +1327,7 @@ label {
   color: #5b5957;
 }
 .details.details2.details1:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
   background-image: url("images/1st.png");
   display: flex;
   justify-content: flex-end;
@@ -1336,11 +1336,11 @@ label {
 .details.details2 {
   margin: 12px;
   align-items: center;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .hov{
-  display: none;
+  display: block;
   padding: 12px;
   margin-top: 250px;
 }
