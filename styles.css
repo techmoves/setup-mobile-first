@@ -490,7 +490,6 @@ article {
   display: none;
 }
 
-
 /* about me section */
 
 #about-me-sec {
@@ -1329,7 +1328,6 @@ label {
     transform-origin: 1%;
     transition-duration: 0.1s;
   }
-
 
   /* -----hover-----on cards--- */
   .button-hov {
