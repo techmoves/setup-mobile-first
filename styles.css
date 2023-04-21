@@ -225,7 +225,7 @@ p {
 
 .recent-pic {
   align-items: center;
-  width: 500px;
+  width: 80%;
 }
 
 .top-stories {
@@ -1493,14 +1493,25 @@ label {
     color: #344563;
   }
 
+  .recent-pic {
+    align-items: center;
+    width: 663px;
+  }
+
   .destop5 {
     display: flex;
     flex-direction: row;
-    gap: 8em;
   }
 
   .top-hd {
     display: block;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 14px 16px;
   }
 }
 
@@ -1519,10 +1530,6 @@ label {
 
 .top-hd {
   display: none;
-}
-
-.mobile-head {
-  color: black;
 }
 
 #overlay {
