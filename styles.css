@@ -33,6 +33,7 @@ a {
 .popup-para {
   align-content: center;
   margin: 0 16px;
+  margin-left: 148px;
 }
 
 .popup-photo {
@@ -47,7 +48,7 @@ a {
 
 .btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 14px 16px;
 }
 
@@ -224,7 +225,7 @@ p {
 
 .recent-pic {
   align-items: center;
-  width: 95%;
+  width: 500px;
 }
 
 .top-stories {
@@ -314,7 +315,7 @@ article {
 /* boostrap */
 .position-buttons {
   display: flex;
-  padding: 10px 0;
+  padding: 54px 19px;
 }
 
 .recentBtn {
@@ -483,6 +484,9 @@ article {
 }
 
 #last-name {
+  display: none;
+}
+.recent-para2 {
   display: none;
 }
 
@@ -1304,6 +1308,10 @@ label {
   .top-stories {
     display: none;
   }
+  .close-button {
+    position: relative;
+    display: flex;
+  }
 
   /* --------------------------------this hover and animation forr more styling---------------------------- */
 
@@ -1457,6 +1465,40 @@ label {
   .details1.details1:hover ul li {
     display: none;
   }
+
+  .recent-para2 {
+  display: block;
+  width: 646px;
+  height: 300px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+.recent-para1 {
+    display: block;
+    max-width: 685px;
+    width: 747px;
+    height: 226px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+}
+
+.destop5 {
+  display: flex;
+  flex-direction: row;
+  gap: 8;
+}
+.top-hd {
+  display: block;
+}
+
 }
 
 /* --------------------popup------------ */
@@ -1469,8 +1511,12 @@ label {
   transform: translate(-50%, -50%);
   background-color: white;
   z-index: 1000;
-  width: 375px;
+  width: 80%;
 }
+.top-hd {
+  display: none;
+}
+
 
 .mobile-head {
   color: black;
