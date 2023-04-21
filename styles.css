@@ -431,13 +431,13 @@ article {
   display: none;
 }
 
-.professional-art1 {
+/* .professional-art1 {
   display: inline;
   gap: 20px;
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 3%;
-}
+} */
 
 .web-padd {
   display: none;
@@ -489,11 +489,6 @@ article {
 #last-name {
   display: none;
 }
-
-.see-project-btn {
-  display: block;
-}
-
 
 
 /* about me section */
@@ -1311,12 +1306,14 @@ label {
     color: #091e42;
   }
 
-  .destop5 {
-    display: f;
-  }
-
   .top-stories {
     display: none;
+  }
+
+  .hov {
+    display: none;
+    padding: 12px;
+    margin-top: 250px;
   }
 
   /* --------------------------------this hover and animation forr more styling---------------------------- */
@@ -1399,12 +1396,6 @@ label {
     width: 100%;
   }
 
-  .hov {
-    display: none;
-    padding: 12px;
-    margin-top: 250px;
-  }
-
   .details.details2.details1.details.details1:hover {
     /* transform: scale(1.08); */
     background-image: url("images/1st.png");
@@ -1472,10 +1463,6 @@ label {
   .details1.details1:hover ul li {
     display: none;
   }
-
-  .details.details:hover ul li {
-    display: none;
-  }
 }
 
 /* --------------------popup------------ */
@@ -1489,10 +1476,6 @@ label {
   background-color: white;
   z-index: 1000;
   width: 375px;
-}
-
-.close-button {
-  position: right;
 }
 
 .mobile-head {
