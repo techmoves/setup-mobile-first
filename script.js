@@ -181,7 +181,7 @@ cardData.forEach((value, index) => {
   work.appendChild(div);
 });
 
-btnClick = document.querySelectorAll('.see-project-btn');
+const btnClick = document.querySelectorAll('.see-project-btn');
 
 btnClick.forEach((btn) => {
   btn.addEventListener('click', (e) => {
