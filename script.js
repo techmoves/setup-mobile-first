@@ -114,7 +114,7 @@ cardData.forEach((value,index) => {
   if(index === 0 || index === 3 ){
     div.id = index;
     div.innerHTML = `
-    <h2>${value.heading}</h2>
+    <h2 class="card1-head">${value.heading}</h2>
     <p class="data-arc">${value.text}</p>
     <div class="programs programs1">
 
@@ -131,7 +131,7 @@ cardData.forEach((value,index) => {
     div.className = "details1";
     div.id = index;
     div.innerHTML = `
-    <h2>${value.heading}</h2>
+    <h2 class="card1-head">${value.heading}</h2>
     <p class="data-arc">${value.text}</p>
     <div class="programs">
 
