@@ -1398,6 +1398,7 @@ label {
   margin-top: 250px;
 }
 
+
 .details.details2.details1.details.details1:hover {
   /* transform: scale(1.08); */
   background-image: url("images/1st.png");
@@ -1415,7 +1416,7 @@ label {
 .details2.details2:hover .hov {
   display: block;
   width: 100%;
-  margin-top:20rem;
+  margin-top:24rem;
 }
 
 .details1.details1:hover .hov {
@@ -1473,6 +1474,10 @@ label {
   transform: translate(-50%, -50%);
   background-color: white;
   z-index: 1000;
+  width: 375px;
+}
+.close-button {
+  position: right;
 }
  .mobile-head {
   color: black;
