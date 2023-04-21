@@ -78,60 +78,60 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-//---------------------popUp section-----------------------
-    const cardData = [
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
+// ---------------------popUp section-----------------------
+const cardData = [
+  {
+    heading: 'Data Dashboard ',
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ['html', 'bootstrap', 'ruby'],
+    btn: 'see project',
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
+  },
+  {
+    heading: 'Data Dashboard ',
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ['html', 'bootstrap', 'ruby'],
+    btn: 'see project',
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        heading2 : 'Website Portfolio',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
+  },
+  {
+    heading: 'Data Dashboard ',
+    heading2: 'Website Portfolio',
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ['html', 'bootstrap', 'ruby'],
+    btn: 'see project',
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists: ['html','bootstrap','ruby'],
-        btn: 'see project'
+  },
+  {
+    heading: 'Data Dashboard ',
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ['html', 'bootstrap', 'ruby'],
+    btn: 'see project',
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists:  ['html','bootstrap','ruby'],
-        btn: 'see project'
+  },
+  {
+    heading: 'Data Dashboard ',
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ['html', 'bootstrap', 'ruby'],
+    btn: 'see project',
 
-      },
-      {
-        heading: 'Data Dashboard ',
-        heading2 : 'Website Portfolio',
-        text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        lists:  ['html','bootstrap','ruby'],      
-        btn: 'see project'
+  },
+  {
+    heading: 'Data Dashboard ',
+    heading2: 'Website Portfolio',
+    text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    lists: ['html', 'bootstrap', 'ruby'],
+    btn: 'see project',
 
-      },
-    ]
+  },
+];
 
 const work = document.getElementById('test');
 
-cardData.forEach((value,index) => {
+cardData.forEach((value, index) => {
   const div = document.createElement('div');
-  div.className = "details";
-  if(index === 0 || index === 3 ){
+  div.className = 'details';
+  if (index === 0 || index === 3) {
     div.id = index;
     div.innerHTML = `
     <h2 class="card1-head">${value.heading}</h2>
@@ -144,9 +144,9 @@ cardData.forEach((value,index) => {
         </ul>
     </div>
      <button type="button" class="see-project-btn button-hov hov" id="1">See Project </button>
-    `
-  }else if (index === 1 || index === 4) {
-    div.className = "details1";
+    `;
+  } else if (index === 1 || index === 4) {
+    div.className = 'details1';
     div.id = index;
     div.innerHTML = `
     <h2 class="card1-head">${value.heading}</h2>
@@ -159,8 +159,8 @@ cardData.forEach((value,index) => {
         </ul> 
     </div>
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
-    `
-  }else if (index === 2 || index === 5){
+    `;
+  } else if (index === 2 || index === 5) {
     div.className = 'details2';
     div.id = index;
     div.innerHTML = `
@@ -175,15 +175,15 @@ cardData.forEach((value,index) => {
         </ul>
     </div>
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
-    `
+    `;
   }
 
   work.appendChild(div);
-})
+});
 
 btnClick = document.querySelectorAll('.see-project-btn');
 
-btnClick.forEach(btn => {
+btnClick.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
     const x = btn.parentNode.id;
@@ -218,8 +218,8 @@ btnClick.forEach(btn => {
 </div>
     `;
     work.appendChild(pop);
-  })
-})
+  });
+});
 
 document.addEventListener('click', (e) => {
   const popUp = document.querySelector('.popUp');
