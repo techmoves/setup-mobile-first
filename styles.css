@@ -33,7 +33,7 @@ a {
 .popup-para {
   align-content: center;
   margin: 0 16px;
-  margin-left: 148px;
+  margin-left: 18px;
 }
 
 .popup-photo {
@@ -225,7 +225,8 @@ p {
 
 .recent-pic {
   align-items: center;
-  width: 80%;
+  width: 90%;
+  height: 70%;
 }
 
 .top-stories {
@@ -1309,10 +1310,14 @@ label {
   .top-stories {
     display: none;
   }
+   .top-hd {
+    display: block;
+  }
 
   .close-button {
-    position: relative;
-    display: flex;
+    margin-right: 15px;
+    padding-right: 20px;
+
   }
 
   /* --------------------------------this hover and animation forr more styling---------------------------- */
@@ -1470,7 +1475,7 @@ label {
 
   .recent-para2 {
     display: block;
-    width: 646px;
+    width: 95%;
     height: 300px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1478,10 +1483,10 @@ label {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
+    margin-top: 22px;
   }
 
   .recent-para1 {
-    display: block;
     max-width: 685px;
     width: 747px;
     height: 226px;
@@ -1493,9 +1498,13 @@ label {
     color: #344563;
   }
 
+  .recent-para5 {
+    display: none;
+  }
+
   .recent-pic {
     align-items: center;
-    width: 663px;
+    width: 100%;
   }
 
   .destop5 {
@@ -1528,13 +1537,33 @@ label {
   width: 80%;
 }
 
+.close-button {
+  margin-right: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  border: none;
+}
+
 .top-hd {
   display: none;
 }
 
+.recent-para5 {
+  width: 311px;
+  height: 220px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 #overlay {
-  /* background-color: #979493; */
-  background: linear-gradient(100deg, #9a9daf, #939797);
+  background-color: rgb(59, 58, 58);
   left: 0;
   top: 0;
   right: 0;

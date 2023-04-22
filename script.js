@@ -81,45 +81,45 @@ form.addEventListener('submit', (event) => {
 // ---------------------popUp section-----------------------
 const cardData = [
   {
-    heading: 'Data Dashboard ',
-    heading3: 'Keeping track of hundreds  of components website',
+    heading: "Data Dashboard ",
+    heading3: "Keeping track of hundreds  of components website",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'ruby'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
+    heading: "Data Dashboard ",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'ruby'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
-    heading2: 'Website Portfolio',
+    heading: "Data Dashboard ",
+    heading2: "Website Portfolio",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'ruby'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
+    heading: "Data Dashboard ",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'ruby'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Railsy"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
-    heading3: 'Keeping track of hundreds  of components website',
+    heading: "Data Dashboard ",
+    heading3: "Keeping track of hundreds  of components website",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'ruby'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
-    heading3: 'Keeping track of hundreds  of components website',
-    heading2: 'Website Portfolio',
+    heading: "Data Dashboard ",
+    heading3: "Keeping track of hundreds  of components website",
+    heading2: "Website Portfolio",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'ruby'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "rRuby on Rails"],
+    btn: "see project",
   },
 ];
 
@@ -192,6 +192,7 @@ btnClick.forEach((btn) => {
     pop.innerHTML = `
     <div id="top-popup">
     <h3 class="top-stories">${cardData[x].heading} </h3>
+    <h3 class="top-stories">${cardData[x].heading} </h3>
     <h3 class="top-stories top-hd">${cardData[x].heading3} </h3>
 <h3 class="top-hd">Keeping track of hundreds  of components website</h3>
     <button class="close-button">&times;</button>
@@ -210,7 +211,7 @@ btnClick.forEach((btn) => {
 </div>
   
     <div class="popup-para">
-    <span class="recent-para1">
+    <span class="recent-para1 ">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent </>
     </span>
     <span class="recent-para2">
