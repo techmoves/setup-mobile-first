@@ -1510,8 +1510,6 @@ label {
 
   .recent-para1 {
     max-width: 100%;
-    width: 747px;
-    height: 226px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1552,7 +1550,7 @@ label {
   transform: translate(-50%, -50%);
   background-color: white;
   z-index: 1000;
-  width: 80%;
+  width: 65%;
 }
 
 .close-button {
