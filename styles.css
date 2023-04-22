@@ -737,6 +737,14 @@ form {
   outline: #dbd8d7;
 }
 
+.mobile-heading {
+  display: block;
+}
+
+.desktop-heading {
+  display: none;
+}
+
 footer {
   margin-top: 80px;
 }
@@ -1190,6 +1198,10 @@ label {
     display: block;
   }
 
+  .desktop-heading {
+    display: block;
+  }
+
   .details1 {
     background-image: url(images/availabilty.png);
     background-repeat: no-repeat;
@@ -1308,7 +1320,7 @@ label {
   }
 
   .top-stories {
-    display: none;
+    display: block;
   }
    .top-hd {
     display: block;
@@ -1317,6 +1329,9 @@ label {
   .close-button {
     margin-right: 15px;
     padding-right: 20px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
 
   }
 
@@ -1429,6 +1444,10 @@ label {
     display: block;
     width: 100%;
     margin-top: 20rem;
+  }
+
+  .mobile-heading {
+    display: none;
   }
 
   .details.details:hover .hov {
