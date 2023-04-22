@@ -81,51 +81,51 @@ form.addEventListener('submit', (event) => {
 // ---------------------popUp section-----------------------
 const cardData = [
   {
-    heading: "Data Dashboard ",
-    heading3: "Keeping track of hundreds  of components website",
+    heading: 'Data Dashboard ',
+    heading3: 'Keeping track of hundreds  of components website',
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ["html", "bootstrap", "Ruby on Rails"],
-    btn: "see project",
-    btn1: "get-my-resume-btn",
+    lists: ['html', 'bootstrap', 'Ruby on Rails'],
+    btn: 'see project',
+    btn1: 'get-my-resume-btn',
   },
   {
-    heading: "Data Dashboard ",
+    heading: 'Data Dashboard ',
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ["html", "bootstrap", "Ruby on Rails"],
-    btn: "see project",
-    btn1: "get-my-resume-btn",
+    lists: ['html', 'bootstrap', 'Ruby on Rails'],
+    btn: 'see project',
+    btn1: 'get-my-resume-btn',
   },
   {
-    heading: "Data Dashboard ",
-    heading2: "Website Portfolio",
+    heading: 'Data Dashboard ',
+    heading2: 'Website Portfolio',
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ["html", "bootstrap", "Ruby on Rails"],
-    btn: "see project",
-    btn1: "get-my-resume-btn",
+    lists: ['html', 'bootstrap', 'Ruby on Rails'],
+    btn: 'see project',
+    btn1: 'get-my-resume-btn',
   },
   {
-    heading: "Data Dashboard ",
+    heading: 'Data Dashboard ',
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ["html", "bootstrap", "Ruby on Railsy"],
-    btn: "see project",
-    btn1: "get-my-resume-btn",
+    lists: ['html', 'bootstrap', 'Ruby on Railsy'],
+    btn: 'see project',
+    btn1: 'get-my-resume-btn',
   },
   {
-    heading: "Data Dashboard ",
-    heading3: "Keeping track of hundreds  of components website",
+    heading: 'Data Dashboard ',
+    heading3: 'Keeping track of hundreds  of components website',
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ["html", "bootstrap", "Ruby on Rails"],
-    btn: "see project",
-    btn1: "get-my-resume-btn",
+    lists: ['html', 'bootstrap', 'Ruby on Rails'],
+    btn: 'see project',
+    btn1: 'get-my-resume-btn',
   },
   {
-    heading: "Data Dashboard ",
-    heading3: "Keeping track of hundreds  of components website",
-    heading2: "Website Portfolio",
+    heading: 'Data Dashboard ',
+    heading3: 'Keeping track of hundreds  of components website',
+    heading2: 'Website Portfolio',
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ["html", "bootstrap", "rRuby on Rails"],
-    btn: "see project",
-    btn1: "get-my-resume-btn",
+    lists: ['html', 'bootstrap', 'rRuby on Rails'],
+    btn: 'see project',
+    btn1: 'get-my-resume-btn',
   },
 ];
 
@@ -178,7 +178,7 @@ cardData.forEach((value, index) => {
         </ul>
     </div>
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
-    `; 
+    `;
   }
 
   work.appendChild(div);
@@ -186,7 +186,6 @@ cardData.forEach((value, index) => {
 
 const btnClick = document.querySelectorAll('.see-project-btn');
 const btnClick1 = document.querySelectorAll('.get-my-resume-btn');
-
 
 btnClick.forEach((btn) => {
   btn.addEventListener('click', (e) => {
@@ -237,19 +236,15 @@ btnClick.forEach((btn) => {
   });
 });
 
-
-
-
-
 btnClick1.forEach((btn1) => {
-  btn1.addEventListener("click", (e) => {
+  btn1.addEventListener('click', (e) => {
     e.preventDefault();
     const x = btn1.parentNode.id;
-    const pop = document.createElement("div");
-    const overlay = document.getElementById("overlay");
-    pop.className = "popUp";
-    pop.style.display = "block";
-    overlay.style.display = "block";
+    const pop = document.createElement('div');
+    const overlay = document.getElementById('overlay');
+    pop.className = 'popUp';
+    pop.style.display = 'block';
+    overlay.style.display = 'block';
     pop.innerHTML = `
   <div id="top-popup">
     <h3 class="top-stories mobile-heading">${cardData[x].heading}</h3>
