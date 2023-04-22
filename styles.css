@@ -21,10 +21,38 @@ section > div {
   max-width: 1440px;
 }
 
+/* ---------------------popUp section----------------------- */
+
 a {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: white;
 }
+
+.popup-para {
+  align-content: center;
+  margin: 0 16px;
+  margin-left: 18px;
+}
+
+.popup-photo {
+  margin: 14px 16px;
+  align-content: center;
+}
+
+#top-popup {
+  margin: 14px 16px;
+  align-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 14px 16px;
+}
+
+/* ---------------------popUp section-------------------end---- */
 
 body {
   margin: 0;
@@ -108,7 +136,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-h2 {
+.card1-head {
   width: 100%;
   height: 81px;
   font-family: "Crete Round", sans-serif;
@@ -116,7 +144,8 @@ h2 {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
+
+  /* color: #fff; */
   margin-top: 20px;
   padding-top: 50px;
 }
@@ -162,6 +191,15 @@ p {
   gap: 20px;
 }
 
+/* -----------------------------js----------------------- */
+
+#para-popup {
+  width: 90vw;
+  height: 80vh;
+  top: 10%;
+  left: 4%;
+}
+
 /* ----------------mobile version---------------- */
 
 /* my recent works */
@@ -187,7 +225,8 @@ p {
 
 .recent-pic {
   align-items: center;
-  width: 95%;
+  width: 90%;
+  height: 70%;
 }
 
 .top-stories {
@@ -277,7 +316,7 @@ article {
 /* boostrap */
 .position-buttons {
   display: flex;
-  padding: 10px 0;
+  padding: 54px 19px;
 }
 
 .recentBtn {
@@ -386,7 +425,19 @@ article {
   line-height: 24px;
 }
 
+.top-stories1 {
+  display: none;
+}
+
 .professional-art1 {
+  display: inline;
+  gap: 20px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 3%;
+}
+
+.web-padd {
   display: none;
 }
 
@@ -429,7 +480,15 @@ article {
   flex-wrap: wrap;
 }
 
+.click.hide {
+  display: none;
+}
+
 #last-name {
+  display: none;
+}
+
+.recent-para2 {
   display: none;
 }
 
@@ -678,6 +737,14 @@ form {
   outline: #dbd8d7;
 }
 
+.mobile-heading {
+  display: block;
+}
+
+.desktop-heading {
+  display: none;
+}
+
 footer {
   margin-top: 80px;
 }
@@ -764,15 +831,6 @@ label {
   border-bottom: 1px solid #6f6c6b;
   padding: 5px;
   margin-bottom: 20px;
-}
-
-/* Form Validation styling by Charles */
-
-#msg {
-  color: red;
-  font-family: Inter, 'Times New Roman', Times, serif;
-  height: 3rem;
-  padding-left: 1rem;
 }
 
 /* end of modal styling */
@@ -923,6 +981,15 @@ label {
 
   .work-story {
     padding-top: 0;
+  }
+
+  .mobile-head {
+    display: none;
+  }
+
+  .recent-pic5 {
+    width: 400px;
+    height: 80%;
   }
 
   /* --------------------about me section -------------- */
@@ -1110,7 +1177,7 @@ label {
   }
 
   .professional-art {
-    display: none;
+    display: inline;
   }
 
   .professional-art1 {
@@ -1133,6 +1200,11 @@ label {
   .web-padd {
     padding-top: 15px;
     margin-left: 11px;
+    display: block;
+  }
+
+  .desktop-heading {
+    display: block;
   }
 
   .details1 {
@@ -1151,7 +1223,7 @@ label {
     background-size: cover;
     width: 100%;
     color: white;
-    padding-top: 100px;
+    padding-top: 182px;
   }
 
   .detailss {
@@ -1175,7 +1247,7 @@ label {
   }
 
   .programs1 {
-    display: none;
+    display: block;
   }
 
   .see-project-btn1 {
@@ -1191,10 +1263,6 @@ label {
     background: #ff6b00;
     color: #fff;
     border: #fff;
-  }
-
-  .see-project-btn {
-    display: none;
   }
 
   /* --------------------------- .programs1, */
@@ -1229,6 +1297,47 @@ label {
     text-align: start;
   }
 
+  /* ------popUp----despop---- */
+  .popUp {
+    display: flex;
+  }
+
+  .top-popup {
+    display: flex;
+    margin: 14px 16px;
+    align-content: center;
+  }
+
+  .top-stories1 {
+    display: block;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 36px;
+    color: #091e42;
+  }
+
+  .top-stories {
+    display: block;
+  }
+
+  .top-hd {
+    display: block;
+  }
+
+  .close-button {
+    margin-right: 15px;
+    padding-right: 20px;
+    position: absolute;
+    right: 150px;
+    top: 25px;
+  }
+
   /* --------------------------------this hover and animation forr more styling---------------------------- */
 
   .logo-art:hover {
@@ -1242,4 +1351,243 @@ label {
     transform-origin: 1%;
     transition-duration: 0.1s;
   }
+
+  .hov {
+    display: none;
+    padding: 12px;
+    margin-top: 250px;
+  }
+
+  /* -----hover-----on cards--- */
+  .button-hov {
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+  }
+
+  .button-hov:visited {
+    background-color: #ff6b00;
+  }
+
+  .button-hov:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+    transform: translate(5px, 5px);
+  }
+
+  .button-hov:active {
+    background-color: #e05304;
+    color: #fff;
+  }
+
+  .button-hov:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  .details.details2.details1:hover {
+    transform: scale(1.05);
+    background-image: url("images/1st.png");
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .details1:hover {
+    transform: scale(1.05);
+    background-image: url("images/1st.png");
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .details.details2 {
+    margin: 12px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .details1.details1 {
+    margin: 12px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .details.details {
+    margin: 12px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .details.details1 .hov {
+    display: block;
+    width: 100%;
+  }
+
+  .details.details2.details1.details.details1:hover {
+    /* transform: scale(1.08); */
+    background-image: url("images/1st.png");
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .details:hover {
+    /* transform: scale(1.08); */
+    background-image: url("images/1st.png");
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .details2.details2:hover .hov {
+    display: block;
+    width: 100%;
+    margin-top: 24rem;
+  }
+
+  .details1.details1:hover .hov {
+    display: block;
+    width: 100%;
+    margin-top: 20rem;
+  }
+
+  .mobile-heading {
+    display: none;
+  }
+
+  .details.details:hover .hov {
+    display: block;
+    width: 100%;
+    margin-top: 20rem;
+  }
+
+  .details2.details2:hover h2 {
+    display: none;
+  }
+
+  .details1.details1:hover h2 {
+    display: none;
+  }
+
+  .details.details:hover h2 {
+    display: none;
+  }
+
+  .details2.details2:hover p {
+    display: none;
+  }
+
+  .details.details:hover p {
+    display: none;
+  }
+
+  .details1.details1:hover p {
+    display: none;
+  }
+
+  .details2.details2:hover ul li {
+    display: none;
+  }
+
+  .details.details:hover ul li {
+    display: none;
+  }
+
+  .details1.details1:hover ul li {
+    display: none;
+  }
+
+  .recent-para2 {
+    display: block;
+    width: 95%;
+    height: 300px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    margin-top: 22px;
+  }
+
+  .recent-para1 {
+    max-width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .recent-para5 {
+    display: none;
+  }
+
+  .recent-pic {
+    align-items: center;
+    width: 100%;
+  }
+
+  .destop5 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 14px 16px;
+  }
+}
+
+/* --------------------popup------------ */
+
+.popUp {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 1000;
+  width: 65%;
+}
+
+.close-button {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  border: none;
+  margin-right: 15px;
+  padding-right: 20px;
+  position: absolute;
+  right: -10px;
+  top: 15px;
+}
+
+.top-hd {
+  display: none;
+}
+
+.recent-para5 {
+  width: 311px;
+  height: 220px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+#overlay {
+  background-color: rgb(59, 58, 58);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  display: none;
+  z-index: 100;
 }
