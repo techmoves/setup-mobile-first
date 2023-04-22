@@ -81,45 +81,46 @@ form.addEventListener('submit', (event) => {
 // ---------------------popUp section-----------------------
 const cardData = [
   {
-    heading: 'Data Dashboard ',
-    heading3: 'Keeping track of hundreds  of components website',
+    heading: "Data Dashboard ",
+    heading3: "Keeping track of hundreds  of components website",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'Ruby on Rails'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
+    heading: "Data Dashboard ",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'Ruby on Rails'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
-    heading2: 'Website Portfolio',
+    heading: "Data Dashboard ",
+    heading2: "Website Portfolio",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'Ruby on Rails'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
+    heading: "Data Dashboard ",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'Ruby on Railsy'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Railsy"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
-    heading3: 'Keeping track of hundreds  of components website',
+    heading: "Data Dashboard ",
+    heading3: "Keeping track of hundreds  of components website",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'Ruby on Rails'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "Ruby on Rails"],
+    btn: "see project",
   },
   {
-    heading: 'Data Dashboard ',
-    heading3: 'Keeping track of hundreds  of components website',
-    heading2: 'Website Portfolio',
+    heading: "Data Dashboard ",
+    heading3: "Keeping track of hundreds  of components website",
+    heading2: "Website Portfolio",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    lists: ['html', 'bootstrap', 'rRuby on Rails'],
-    btn: 'see project',
+    lists: ["html", "bootstrap", "rRuby on Rails"],
+    btn: "see project",
+    btn: "get-my-resume-btn",
   },
 ];
 
@@ -172,13 +173,14 @@ cardData.forEach((value, index) => {
         </ul>
     </div>
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
-    `;
+    `; 
   }
 
   work.appendChild(div);
 });
 
 const btnClick = document.querySelectorAll('.see-project-btn');
+
 
 btnClick.forEach((btn) => {
   btn.addEventListener('click', (e) => {
