@@ -86,12 +86,14 @@ const cardData = [
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     lists: ["html", "bootstrap", "Ruby on Rails"],
     btn: "see project",
+    btn1: "get-my-resume-btn",
   },
   {
     heading: "Data Dashboard ",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     lists: ["html", "bootstrap", "Ruby on Rails"],
     btn: "see project",
+    btn1: "get-my-resume-btn",
   },
   {
     heading: "Data Dashboard ",
@@ -99,12 +101,14 @@ const cardData = [
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     lists: ["html", "bootstrap", "Ruby on Rails"],
     btn: "see project",
+    btn1: "get-my-resume-btn",
   },
   {
     heading: "Data Dashboard ",
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     lists: ["html", "bootstrap", "Ruby on Railsy"],
     btn: "see project",
+    btn1: "get-my-resume-btn",
   },
   {
     heading: "Data Dashboard ",
@@ -112,6 +116,7 @@ const cardData = [
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     lists: ["html", "bootstrap", "Ruby on Rails"],
     btn: "see project",
+    btn1: "get-my-resume-btn",
   },
   {
     heading: "Data Dashboard ",
@@ -120,7 +125,7 @@ const cardData = [
     text: "selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     lists: ["html", "bootstrap", "rRuby on Rails"],
     btn: "see project",
-    btn: "get-my-resume-btn",
+    btn1: "get-my-resume-btn",
   },
 ];
 
@@ -180,6 +185,7 @@ cardData.forEach((value, index) => {
 });
 
 const btnClick = document.querySelectorAll('.see-project-btn');
+const btnClick1 = document.querySelectorAll('.get-my-resume-btn');
 
 
 btnClick.forEach((btn) => {
@@ -193,8 +199,61 @@ btnClick.forEach((btn) => {
     overlay.style.display = 'block';
     pop.innerHTML = `
     <div id="top-popup">
-    <h3 class="top-stories mobile-heading">${cardData[x].heading} </h3>
-    <h3 class="top-stories desktop-heading">${cardData[x].heading} </h3>
+    <h3 class="top-stories mobile-heading">${cardData[x].heading}</h3>
+    <h3 class="top-stories desktop-heading">${cardData[x].heading}</h3>
+    <h3 class="top-stories top-hd">${cardData[x].heading3} </h3>
+<h3 class="top-hd">Keeping track of hundreds  of components website</h3>
+    <button class="close-button">&times;</button>
+    
+    <div class="programs">
+        <div class="position-buttons">
+            <button class="recentBtn" type="button" id="color">html </button>
+            <button class="recentBtn" type="button" id="color">bootstrap </button>
+            <button class="recentBtn" type="button" id="color">Ruby</button>
+        </div>
+    </div>
+   </div> 
+<div class="destop5">
+<div class="popup-photo">
+<img class="recent-pic5" src="images/snapshoot.png" alt="snapshoot Portfolio">
+</div>
+  
+    <div class="popup-para">
+    <span class="recent-para1 ">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent </>
+    </span>
+    <span class="recent-para2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+    </span>
+    </div>
+  </div> 
+
+<div class="btn">
+<button type="button" class="get-my-resume-btn">See live <a href="#"><img src="images/Icon2g.png" alt="GitHub" class="github"> </button>
+<button type="button" class="get-my-resume-btn">See source  <a href="#"><img src="images/github.png" alt="GitHub" class="github"></a> </button>
+</div>
+    `;
+    work.appendChild(pop);
+  });
+});
+
+
+
+
+
+btnClick1.forEach((btn1) => {
+  btn1.addEventListener("click", (e) => {
+    e.preventDefault();
+    const x = btn1.parentNode.id;
+    const pop = document.createElement("div");
+    const overlay = document.getElementById("overlay");
+    pop.className = "popUp";
+    pop.style.display = "block";
+    overlay.style.display = "block";
+    pop.innerHTML = `
+  <div id="top-popup">
+    <h3 class="top-stories mobile-heading">${cardData[x].heading}</h3>
+    <h3 class="top-stories desktop-heading">${cardData[x].heading}</h3>
     <h3 class="top-stories top-hd">${cardData[x].heading3} </h3>
 <h3 class="top-hd">Keeping track of hundreds  of components website</h3>
     <button class="close-button">&times;</button>
