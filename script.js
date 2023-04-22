@@ -236,6 +236,5 @@ document.addEventListener('click', (e) => {
   if (target) {
     popUp.remove();
     overlay.style.display = 'none';
-    // overlay.classList.add('hidden');
   }
 });
