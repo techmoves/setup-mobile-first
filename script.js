@@ -284,7 +284,7 @@ btnClick1.forEach((btn1) => {
     work.appendChild(pop);
   });
 });
-
+// Java script for close btn
 document.addEventListener('click', (e) => {
   const popUp = document.querySelector('.popUp');
   const target = e.target.closest('.close-button');
