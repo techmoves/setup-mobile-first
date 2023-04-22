@@ -1561,13 +1561,16 @@ label {
 }
 
 .close-button {
-  margin-right: 20px;
-  padding-right: 20px;
-  cursor: pointer;
-  outline: none;
-  background: none;
-  font-size: 2rem;
-  border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    border: none;
+    margin-right: 15px;
+    padding-right: 20px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
 }
 
 .top-hd {
