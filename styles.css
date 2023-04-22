@@ -1509,7 +1509,7 @@ label {
   }
 
   .recent-para1 {
-    max-width: 685px;
+    max-width: 100%;
     width: 747px;
     height: 226px;
     font-family: 'Inter', sans-serif;
@@ -1564,7 +1564,7 @@ label {
   margin-right: 15px;
   padding-right: 20px;
   position: absolute;
-  right: -13px;
+  right: -10px;
   top: 15px;
 }
 
