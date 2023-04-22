@@ -207,7 +207,7 @@ btnClick.forEach((btn) => {
    </div> 
 <div class="destop5">
 <div class="popup-photo">
-<img class="recent-pic" src="images/snapshoot.png" alt="snapshoot Portfolio">
+<img class="recent-pic5" src="images/snapshoot.png" alt="snapshoot Portfolio">
 </div>
   
     <div class="popup-para">

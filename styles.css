@@ -986,6 +986,10 @@ label {
   .mobile-head {
     display: none;
   }
+  .recent-pic5 {
+    width: 400px;
+    height: 80%;
+  }
 
   /* --------------------about me section -------------- */
 
