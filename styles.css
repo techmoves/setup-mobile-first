@@ -986,6 +986,7 @@ label {
   .mobile-head {
     display: none;
   }
+
   .recent-pic5 {
     width: 400px;
     height: 80%;
@@ -1326,7 +1327,8 @@ label {
   .top-stories {
     display: block;
   }
-   .top-hd {
+
+  .top-hd {
     display: block;
   }
 
@@ -1336,7 +1338,6 @@ label {
     position: absolute;
     right: 25px;
     top: 25px;
-
   }
 
   /* --------------------------------this hover and animation forr more styling---------------------------- */
@@ -1535,10 +1536,6 @@ label {
     flex-direction: row;
   }
 
-  .top-hd {
-    display: block;
-  }
-
   .btn {
     display: flex;
     justify-content: center;
@@ -1561,16 +1558,16 @@ label {
 }
 
 .close-button {
-    cursor: pointer;
-    outline: none;
-    background: none;
-    font-size: 2rem;
-    border: none;
-    margin-right: 15px;
-    padding-right: 20px;
-    position: absolute;
-    right: 25px;
-    top: 25px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  border: none;
+  margin-right: 15px;
+  padding-right: 20px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
 }
 
 .top-hd {
