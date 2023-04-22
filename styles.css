@@ -1304,6 +1304,14 @@ label {
 
   .top-popup {
     display: flex;
+    margin: 14px 16px;
+    align-content: center;
+  }
+
+  #top-popup2 {
+    display: block;
+    margin: 14px 16px;
+    align-content: center;
   }
 
   .top-stories1 {
