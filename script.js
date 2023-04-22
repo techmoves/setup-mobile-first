@@ -180,7 +180,7 @@ cardData.forEach((value, index) => {
     <button type="button" class="see-project-btn button-hov hov">See Project </button>
     `;
   }
-
+  // Appendong work project to the div
   work.appendChild(div);
 });
 
